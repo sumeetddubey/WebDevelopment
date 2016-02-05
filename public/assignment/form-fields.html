@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <title>Form Maker</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Form Maker</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Username</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                    <a href="admin.html">Admin</a>
+                </li>
+                <li class="active">
+                    <a href="forms.html">Forms</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-9 col-sm-offset-3 col-md-8 col-md-offset-2 main">
+    <h2>Forms: Registration</h2>
+    <ul class="nav nav-tabs">
+        <li role="presentation"><a href="forms.html">Form</a></li>
+        <li role="presentation" class="active"><a href="form-fields.html">Fields</a></li>
+    </ul>
+    <div id="formField">
+        <form>
+            <label for="firstNm">First Name:</label>
+            <div class="row form-group">
+                <div class="col-xs-7">
+                    <input type="text" class="form-control" id="firstNm" placeholder="First Name">
+                </div>
+                <div class="col-xs-5">
+                    <a href="#" class="btn btn-primary">
+                        <scan class="glyphicon glyphicon-pencil"></scan>
+                    </a>
+                    <a href="#" class="btn btn-success">
+                        <scan class="glyphicon glyphicon-plus"></scan>
+                    </a>
+                    <a href="#" class="btn btn-danger">
+                        <scan class="glyphicon glyphicon-remove"></scan>
+                    </a>
+                    <a href="#" class="btn btn-warning">
+                        <scan class="glyphicon glyphicon-menu-hamburger"></scan>
+                    </a>
+                </div>
+            </div>
+
+            <label for="lastNm">Last Name:</label>
+            <div class="row form-group">
+                <div class="col-xs-7">
+                    <input type="text" class="form-control" id="lastNm" placeholder="Last Name">
+                </div>
+                <div class="col-xs-5">
+                    <a href="#" class="btn btn-primary">
+                        <scan class="glyphicon glyphicon-pencil"></scan>
+                    </a>
+                    <a href="#" class="btn btn-success">
+                        <scan class="glyphicon glyphicon-plus"></scan>
+                    </a>
+                    <a href="#" class="btn btn-danger">
+                        <scan class="glyphicon glyphicon-remove"></scan>
+                    </a>
+                    <a href="#" class="btn btn-warning">
+                        <scan class="glyphicon glyphicon-menu-hamburger"></scan>
+                    </a>
+                </div>
+            </div>
+
+            <label for="dob">Date of Birth:</label>
+            <div class="row form-group">
+                <div class="col-xs-7">
+                    <input type="date" class="form-control" id="dob" placeholder="Date of Birth">
+                </div>
+                <div class="col-xs-5">
+                    <a href="#" class="btn btn-primary">
+                        <scan class="glyphicon glyphicon-pencil"></scan>
+                    </a>
+                    <a href="#" class="btn btn-success">
+                        <scan class="glyphicon glyphicon-plus"></scan>
+                    </a>
+                    <a href="#" class="btn btn-danger">
+                        <scan class="glyphicon glyphicon-remove"></scan>
+                    </a>
+                    <a href="#" class="btn btn-warning">
+                        <scan class="glyphicon glyphicon-menu-hamburger"></scan>
+                    </a>
+                </div>
+            </div>
+
+            <label for="gender">Gender:</label>
+            <div class="row form-group">
+                <div class="col-xs-7">
+                    <select class="form-control" id="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+                <div class="col-xs-5">
+                    <a href="#" class="btn btn-primary">
+                        <scan class="glyphicon glyphicon-pencil"></scan>
+                    </a>
+                    <a href="#" class="btn btn-success">
+                        <scan class="glyphicon glyphicon-plus"></scan>
+                    </a>
+                    <a href="#" class="btn btn-danger">
+                        <scan class="glyphicon glyphicon-remove"></scan>
+                    </a>
+                    <a href="#" class="btn btn-warning">
+                        <scan class="glyphicon glyphicon-menu-hamburger"></scan>
+                    </a>
+                </div>
+            </div>
+
+            <label for="roles">Roles:</label>
+            <div class="row form-group">
+                <div class="col-xs-7">
+                    <div id="roles" class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">
+                            Admin
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">
+                            Student
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">
+                            Faculty
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xs-5">
+                    <a href="#" class="btn btn-primary">
+                        <scan class="glyphicon glyphicon-pencil"></scan>
+                    </a>
+                    <a href="#" class="btn btn-success">
+                        <scan class="glyphicon glyphicon-plus"></scan>
+                    </a>
+                    <a href="#" class="btn btn-danger">
+                        <scan class="glyphicon glyphicon-remove"></scan>
+                    </a>
+                    <a href="#" class="btn btn-warning">
+                        <scan class="glyphicon glyphicon-menu-hamburger"></scan>
+                    </a>
+                </div>
+            </div>
+
+            <label for="radio1">License Agreement:</label>
+            <div class="row form-group">
+                <div class="col-xs-7">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="radio1" value="option1" checked>
+                            Yes
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="radio2" value="option2">
+                            No
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xs-5">
+                    <a href="#" class="btn btn-primary">
+                        <scan class="glyphicon glyphicon-pencil"></scan>
+                    </a>
+                    <a href="#" class="btn btn-success">
+                        <scan class="glyphicon glyphicon-plus"></scan>
+                    </a>
+                    <a href="#" class="btn btn-danger">
+                        <scan class="glyphicon glyphicon-remove"></scan>
+                    </a>
+                    <a href="#" class="btn btn-warning">
+                        <scan class="glyphicon glyphicon-menu-hamburger"></scan>
+                    </a>
+                </div>
+            </div>
+            <div id="border"></div>
+
+            <label for="dropDown">Add new field: </label>
+            <div class="row form-group">
+                <div class="col-xs-7">
+                    <select class="form-control" id="dropDown">
+                        <option>Single Line Text</option>
+                        <option>Date</option>
+                        <option>Dropdown</option>
+                        <option>Checkboxes</option>
+                        <option>Radio Buttons</option>
+                        <option>Paragraph Text Field</option>
+                    </select>
+                </div>
+                <div class="col-xs-5">
+                    <a href="#" class="btn btn-success">
+                        <scan class="glyphicon glyphicon-plus"></scan>
+                    </a>
+                </div>
+            </div>
+        </form>
+
+</div>
+</div>
+
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

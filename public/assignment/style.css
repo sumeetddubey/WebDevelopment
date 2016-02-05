@@ -103,3 +103,21 @@ body {
     display: inline-block;
     border-radius: 50%;
 }
+
+a.sortIcon {
+    color: black;
+}
+
+div#formField{
+    padding-top: 2%;
+}
+
+div#border{
+    border-top: solid black 1px;
+    padding-bottom: 2%;
+}
+
+a.buttons{
+    float: right;
+}
+

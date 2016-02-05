@@ -33,8 +33,6 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="register.html">Register</a></li>
-                <li><a href="login.html">Login</a></li>
                 <li><a href="#">Username</a></li>
                 <li><a href="#">Logout</a></li>
             </ul>
@@ -49,13 +47,13 @@
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-sidebar">
-                <li class="active">
+                <li>
                     <a href="home.html">Home</a>
                 </li>
                 <li>
                     <a href="profile.html">Profile</a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="admin.html">Admin</a>
                 </li>
                 <li>
@@ -74,16 +72,16 @@
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th>Username</th>
-                    <th>Password</th>
-                    <th>Role</th>
-                    <th>Action</th>
+                    <th><a href="#" class="glyphicon glyphicon-triangle-bottom sortIcon"></a>Username</th>
+                    <th><a href="#" class="glyphicon glyphicon-triangle-bottom sortIcon"></a>Password</th>
+                    <th><a href="#" class="glyphicon glyphicon-triangle-bottom sortIcon"></a>Role</th>
+                    <th><a href="#" class="glyphicon glyphicon-triangle-bottom sortIcon">Action</th>
                     <th>&nbsp;</th>
                 </tr>
                 <tr>
                     <td><input class="form-control" type="text" name="username" placeholder="Username"/></td>
-                    <td><input class="form-control" type="text" name="password" placeholder="Password"/></td>
-                    <td><input class="form-control" type="date" name="roles" style="text-align: center" placeholder="role1, role2"/></td>
+                    <td><input class="form-control" type="password" name="password" placeholder="Password"/></td>
+                    <td><input class="form-control" type="text" name="roles" style="text-align: center" placeholder="role1, role2"/></td>
                     <td style="white-space: nowrap">
                         <a href="#" class="btn btn-success">
                             <scan class="glyphicon glyphicon-ok"></scan>
