@@ -117,7 +117,8 @@ div#border{
     padding-bottom: 2%;
 }
 
-a.buttons{
-    float: right;
+a.button-float{
+    float:right;
+    margin-left: 1%;
 }
 
