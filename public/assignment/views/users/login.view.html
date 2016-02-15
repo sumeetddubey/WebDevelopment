@@ -15,7 +15,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,13 +29,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Form Maker</a>
+            <a class="navbar-brand" href="../home/home.view.html">Form Maker</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="register.html">Register</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="#">Username</a></li>
+                <li><a href="">Username</a></li>
                 <li><a href="#">Logout</a></li>
             </ul>
             <form class="navbar-form navbar-right">
@@ -49,31 +47,35 @@
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-sidebar">
-                <li class="active">
-                    <a href="home.html">Home</a>
+                <li>
+                    <a href="../home/home.view.html">Home</a>
                 </li>
                 <li>
-                    <a href="profile.html">Profile</a>
+                    <a href="profile.view.html">Profile</a>
                 </li>
                 <li>
-                    <a href="admin.html">Admin</a>
+                    <a href="../admin/admin.view.html">Admin</a>
                 </li>
                 <li>
-                    <a href="forms.html">Forms</a>
+                    <a href="../forms/forms.view.html">Forms</a>
                 </li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h1 class="page-header">Welcome!</h1>
-            <p >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
-            </p>
-
+            <h1 class="page-header">Login</h1>
+            <form action="profile.view.html">
+                <div class="form-group">
+                    <label for="username" class="control-label">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="pass" class="control-label">Password</label>
+                    <input type="password" class="form-control" id="pass" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default btn-block">Login</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
