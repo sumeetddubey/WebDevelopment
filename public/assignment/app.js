@@ -4,19 +4,14 @@
 (function(){
     angular
         .module("FormBuilderApp", ["ng-route"])
-        .config(function($routeProvider){
-            $routeProvider
-                .when("/", {
-                    templateUrl: "home.view.html"
-                })
-                .when("profile", {
-                    templateUrl: "profile.view.html"
-                })
-                .when("admin", {
-                    templateUrl: "admin.view.html"
-                })
-                .otherwise({
-                    redirectTo: "/"
-                });
-        });
+
+        var app = angular.module("FormBuilderApp",[]);
+
+        app.controller("MainController", HelloWorld)
+        function HelloWorld($scope){
+            $scope.hello = "hello from angular";
+        }
+
+
 })();
+
