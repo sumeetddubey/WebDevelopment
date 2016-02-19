@@ -1,17 +1,17 @@
 <div class="row">
     <div class="col-sm-3 col-md-2 sidebar">
         <ul class="nav nav-sidebar">
-            <li class="active">
+            <li ng-class="{'active': $location.url() == '/'}">
                 <a href="#/home">Home</a>
             </li>
-            <li>
+            <li ng-class="{'active': $location.url() == '/profile'}">
                 <a href="#/profile">Profile</a>
             </li>
-            <li>
+            <li ng-class="{'active': $location.url() == '/admin'}">
                 <a href="#/admin">Admin</a>
             </li>
-            <li>
-                <a href="#/form">Forms</a>
+            <li ng-class="{'active': $location.url() == '/forms'}">
+                <a href="#/forms">Forms</a>
             </li>
         </ul>
     </div>

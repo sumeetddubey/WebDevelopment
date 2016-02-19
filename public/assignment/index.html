@@ -8,27 +8,24 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
     <!--loading angularJs-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.0/angular.min.js"></script>
 
     <!--loading angularJs route-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.0/angular-route.js"></script>
+    <script src="https://code.angularjs.org/1.5.0/angular-route.min.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     <!--custom CSS-->
     <link href="style.css" rel="stylesheet">
-
-    <script src="app.js"></script>
-    <script src="config.js"></script>
 </head>
 
 <body ng-controller="MainController">
-<div class="container-fluid" ng-include="'/webdev1/public/assignment/views/header/header.view.html'"></div>
+<div class="container-fluid" ng-include="'views/header/header.view.html'"></div>
 <div class="container-fluid">
     <div class="row">
-        <div ng-include="'/webdev1/public/assignment/views/sidebar/sidebar.view.html'"></div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-view>{{hello}}</div>
+        <div ng-include="'views/sidebar/sidebar.view.html'"></div>
+        <div ng-view></div>
     </div>
 </div>
 
@@ -38,6 +35,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+<script src="app.js"></script>
+<script src="config.js"></script>
+<script src="views/main/main.controller.js"></script>
 </body>
 </html>
