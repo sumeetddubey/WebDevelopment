@@ -5,22 +5,22 @@
         <form action="profile.view.html">
             <div class="form-group">
                 <label for="usrnm" class="control-label">Username</label>
-                <input type="text" class="form-control" id="usrnm" placeholder="Username">
+                <input ng-model="user.ipUsername" type="text" class="form-control" id="usrnm" placeholder="Username">
             </div>
             <div class="form-group">
                 <label for="pass1" class="control-label">Password</label>
-                <input type="password" class="form-control" id="pass1" placeholder="Password">
+                <input ng-model="user.ipPassword" type="password" class="form-control" id="pass1" placeholder="Password">
             </div>
             <div class="form-group">
                 <label for="pass2" class="control-label">Verify Password</label>
-                <input type="password" class="form-control" id="pass2" placeholder="Password">
+                <input ng-model="user.ipVerifyPassword" type="password" class="form-control" id="pass2" placeholder="Password">
             </div>
             <div class="form-group">
                 <label for="email" class="control-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Email">
+                <input ng-model="user.ipEmail" type="email" class="form-control" id="email" placeholder="Email">
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-default btn-block">Register</button>
+                <button ng-click="register(user)" class="btn btn-default btn-block">Register</button>
             </div>
         </form>
     </div>

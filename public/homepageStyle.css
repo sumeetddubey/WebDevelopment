@@ -9,11 +9,13 @@ h1,
 h2{
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 600;
+    height: 100%;
+    width: 100%;
 }
 
 .intro-header {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    /*padding-top: 3%;*/
+    /*padding-bottom: 3%;*/
     text-align: center;
     color: #f8f8f8;
     /*background: url("img/bg.jpg") no-repeat center center;*/
@@ -23,8 +25,8 @@ h2{
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 25%;
+    padding-bottom: 25%;
 }
 
 .intro-message > h1 {
@@ -38,7 +40,7 @@ h2{
 }
 
 .intro-divider {
-    width: 650px;
+    width: 60%;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
@@ -54,7 +56,8 @@ h2{
 
     ul.intro-social-buttons > li {
         display: block;
-        margin-bottom: 20px;
+        /*margin-bottom: 20px;*/
+        margin-bottom: 20%;
         padding: 0;
     }
 
@@ -69,7 +72,7 @@ h2{
 
 .network-name {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 0.8em;
     font-weight: 400;
     letter-spacing: 2px;
 }
