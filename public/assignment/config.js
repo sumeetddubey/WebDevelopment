@@ -20,7 +20,7 @@
                 })
                 .when("/forms", {
                     templateUrl: "views/forms/forms.view.html",
-                    controller: "FormsController"
+                    controller: "FormController"
                 })
                 .when("/login", {
                     templateUrl: "views/users/login.view.html",

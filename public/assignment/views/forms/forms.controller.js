@@ -1,17 +1,16 @@
 /**
  * Created by sumeetdubey on 2/15/16.
  */
-(function() {
-    angular
-        var app = app.module("FormBuilderApp")
-        app.config(function ($routeProvider) {
-            $routeProvider
-                .when("/formfields", {
-                    templateUrl: "views/forms/form-fields.view.html",
-                    controller: "FormFieldsController"
-                })
-        })
-        app.controller("FormController", FormController);
+(function(){
+    var app = angular.module("FormBuilderApp");
+    app.config(function ($routeProvider) {
+        $routeProvider
+            .when("/formfields", {
+                templateUrl: "views/forms/form-fields.view.html",
+                controller: "FormFieldsController"
+            })
+    })
+    app.controller("FormController", FormController);
 
     function FormController($scope, FormService, $rootScope){
         $scope.addForm = addForm;
@@ -19,12 +18,13 @@
         $scope.deleteForm = deleteForm;
         $scope.selectForm = selectForm;
 
+        var userForms;
         var currUser;
-        currUser = $rootScope.currentUser
-        $FormController.findAllFormsForUser(currUser, render)
+        currUser = $rootScope.currentUser;
+        $FormService.findAllFormsForUser(currUser, render);
 
         function render(response){
-            $scope.form.name = response;
+            $scope.userForms = $scope.userForms.push(response);
         }
 
         function addForm(){
