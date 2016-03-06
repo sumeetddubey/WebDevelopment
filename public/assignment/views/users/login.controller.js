@@ -9,13 +9,19 @@
         $scope.login = login;
 
         function login(user){
-            var render = function(response){
+            function render(response){
                 if(response){
                     console.log(response);
                     $rootScope.currentUser = response;
+                    console.log($rootScope.currentUser)
                     $location.url("/profile");
                 }
+                else{
+                    console.log("No response" +response);
+                    $scope.message = "Invalid credentials";
+                }
             };
+            console.log(user)
             UserService.findUserByCredentials(user.username, user.password, render);
 
         }

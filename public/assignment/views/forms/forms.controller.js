@@ -18,22 +18,30 @@
         $scope.deleteForm = deleteForm;
         $scope.selectForm = selectForm;
 
-        var userForms;
+        var userForms=[];
         var currUser;
         currUser = $rootScope.currentUser;
-        $FormService.findAllFormsForUser(currUser, render);
+        console.log(currUser);
 
         function render(response){
-            $scope.userForms = $scope.userForms.push(response);
+            console.log(response);
+            $scope.form = response;
+            userForms.push(response);
+            $rootScope.userForms = userForms;
         }
+        FormService.findAllFormsForUser(currUser._id, render);
 
-        function addForm(){
-            var newform = [{"title": form.title}];
-            FormService.createFormForUser($rootScope.currentUser, newform, render)
 
+        function addForm(newForm){
             function render(response){
                 console.log(response);
+                $location.url = "/forms";
             }
+            console.log(newForm);
+            console.log($rootScope.currentUser);
+
+            FormService.createFormForUser($rootScope.currentUser, newform, render)
+
         }
 
         function updateForm(form){
@@ -41,7 +49,7 @@
             FormService.updateFormById(id, form, render)
 
             function render(response){
-                console.long(response);
+                console.log(response);
             }
         }
 

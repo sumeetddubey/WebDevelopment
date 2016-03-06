@@ -5,7 +5,7 @@
     var app = angular.module("FormBuilderApp");
     app.controller("HeaderController", HeaderController);
 
-    function HeaderController(){
-
+    function HeaderController($rootScope){
+        var currentUser = $rootScope.currentUser;
     }
 })();

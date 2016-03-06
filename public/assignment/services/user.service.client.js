@@ -5,7 +5,7 @@
     var app = angular.module("FormBuilderApp");
     app.factory("UserService", UserService);
 
-    function UserService($scope){
+    function UserService(){
         var model = {
             currUsers: [
                 {
@@ -45,10 +45,7 @@
             for (user in model.currUsers){
                 if(username === model.currUsers[user].username && password ===  model.currUsers[user].password)
                 {
-                    callback(user);
-                }
-                else {
-                    callback(null);
+                    callback(model.currUsers[user]);
                 }
             }
         }
