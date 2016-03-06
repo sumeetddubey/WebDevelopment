@@ -58,7 +58,7 @@
         //method to create new user
         function createUser(user, callback){
             var newuser = {
-                "_id": "(new Date).getTime()",
+                "_id": new Date.getTime(),
                 "firstname": user.firstname,
                 "lastname": user.lastname,
                 "username": user.username,

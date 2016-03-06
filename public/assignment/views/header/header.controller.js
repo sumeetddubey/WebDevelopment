@@ -5,7 +5,14 @@
     var app = angular.module("FormBuilderApp");
     app.controller("HeaderController", HeaderController);
 
-    function HeaderController($rootScope){
+    function HeaderController($scope, $rootScope, $location){
         var currentUser = $rootScope.currentUser;
+        $scope.logout = logout;
+
+        function logout(){
+            console.log("in logout");
+            $rootScope.currentUser = null;
+            $location.url("/home");
+        }
     }
 })();

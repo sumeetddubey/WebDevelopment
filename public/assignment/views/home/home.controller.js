@@ -2,9 +2,11 @@
  * Created by sumeetdubey on 2/15/16.
  */
 (function(){
-    angular
-        .module("FormBuilderApp")
-        .controller("HomeController", HomeController);
+    var app =  angular.module("FormBuilderApp");
+    app.controller("HomeController", HomeController);
 
-    function HomeController(){}
+    function HomeController($scope, $location){
+        console.log("in home");
+        $scope.$location = $location;
+    }
 })();

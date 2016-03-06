@@ -21,14 +21,16 @@
 
         return model;
 
-        $scope.forms = model.forms;
-        function createFormForUser(userid, form, callbaack){
+        function createFormForUser(userid, form, callback){
+            var d = new Date();
+            var t = d.getTime();
             var newform = {
-                "_id": "(new Date).getTime()",
-                "title": form.title(),
+                "_id": t,
+                "title": form.name,
                 "userId": userid
             };
-            $scope.forms.push(newform);
+            model.forms.push(newform);
+            console.log(model.forms)
             callback(newform);
         }
 

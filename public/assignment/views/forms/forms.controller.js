@@ -12,7 +12,7 @@
     })
     app.controller("FormController", FormController);
 
-    function FormController($scope, FormService, $rootScope){
+    function FormController($scope, FormService, $route ,$rootScope, $location){
         $scope.addForm = addForm;
         $scope.updateForm = updateForm;
         $scope.deleteForm = deleteForm;
@@ -35,18 +35,19 @@
         function addForm(newForm){
             function render(response){
                 console.log(response);
-                $location.url = "/forms";
+                $location.url("/forms");
+                $route.reload();
             }
             console.log(newForm);
             console.log($rootScope.currentUser);
 
-            FormService.createFormForUser($rootScope.currentUser, newform, render)
+            FormService.createFormForUser($rootScope.currentUser._id, newForm, render)
 
         }
 
         function updateForm(form){
             var id = $scope.forms[$scope.selectedFormIndex]._id;
-            FormService.updateFormById(id, form, render)
+            FormService.updateFormById(id, form, render);
 
             function render(response){
                 console.log(response);
@@ -62,13 +63,17 @@
             }
         }
 
-        function selectForm(index){
-            $scope.selectedFormIndex = index;
-            $scope.newForm = {
-                "_id": $scope.forms[index]._id,
-                "title": $scope.forms[index].title,
-                "userId": $scope.forms[index].userId
+        function selectForm(form){
+            console.log(form);
+            var selectedForm = {
+                "_id": form._id,
+                "title": form.title,
+                "userId": form.userId
             };
+            console.log(selectedForm);
+            $scope.newForm.name = selectedForm.title;
+            $location.url("/forms");
+            route.reload();
         }
     }
 })();
