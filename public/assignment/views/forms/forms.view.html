@@ -15,12 +15,12 @@
                 <th>&nbsp;</th>
             </tr>
             <tr>
-                <td><input ng-model="newForm.name" class="form-control" type="text" name="username" placeholder="name"/></td>
+                <td><input ng-model="selectedForm.title" class="form-control" type="text" name="username"/></td>
                 <td style="white-space: nowrap">
-                    <a ng-click="addForm(newForm)" class="btn btn-success">
+                    <a ng-click="addForm(selectedForm)" class="btn btn-success">
                         <scan class="glyphicon glyphicon-plus"></scan>
                     </a>
-                    <a ng-click="updateForm(newForm)" class="btn btn-warning">
+                    <a ng-click="updateForm(selectedForm)" class="btn btn-warning">
                         <scan class="glyphicon glyphicon-ok"></scan>
                     </a>
                 </td>
@@ -30,7 +30,7 @@
             <tr ng-repeat="form in userForms">
                 <td><a href="form-fields.view.html"/>{{form.title}}</td>
                 <td>
-                    <a ng-click="deleteForm()" class="btn btn-danger">
+                    <a ng-click="deleteForm(form)" class="btn btn-danger">
                         <scan class="glyphicon glyphicon-remove"></scan>
                     </a>
                     <a ng-click="selectForm(form)" class="btn btn-primary">

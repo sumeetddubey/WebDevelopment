@@ -24,56 +24,78 @@
         console.log(currUser);
 
         function render(response){
-            console.log(response);
-            $scope.form = response;
-            userForms.push(response);
-            $rootScope.userForms = userForms;
+            if(response) {
+                console.log(response);
+                $scope.form = response;
+                userForms.push(response);
+                $rootScope.userForms = userForms;
+            }
+            else{
+                userForms=[];
+                $rootScope.userForms = userForms;
+            }
         }
-        FormService.findAllFormsForUser(currUser._id, render);
-
+        if(currUser) {
+            FormService.findAllFormsForUser(currUser._id, render);
+        }
+        else{
+            $location.url("/forms");
+        }
 
         function addForm(newForm){
+            function render(response){
+                if(response) {
+                    console.log(response);
+                    $location.url("/forms");
+                    $route.reload();
+                }
+                else{
+                    $location.url("/forms");
+                    $route.reload();
+                }
+            }
+            console.log(newForm);
+            console.log($rootScope.currentUser);
+
+            if(currUser && (newForm)) {
+                FormService.createFormForUser(currUser._id, newForm, render)
+            }
+            else{
+                $location.url("/forms");
+            }
+        }
+
+        function updateForm(form){
+            if(form) {
+                var id = $scope.selectedForm._id;
+                FormService.updateFormById(id, $scope.selectedForm, render);
+
+                function render(response) {
+                    console.log(response);
+                    $location.url("/forms");
+                    $route.reload();
+                }
+            }
+
+        }
+
+        function deleteForm(form){
+            FormService.deleteFormById(form._id, render)
+
             function render(response){
                 console.log(response);
                 $location.url("/forms");
                 $route.reload();
             }
-            console.log(newForm);
-            console.log($rootScope.currentUser);
-
-            FormService.createFormForUser($rootScope.currentUser._id, newForm, render)
-
-        }
-
-        function updateForm(form){
-            var id = $scope.forms[$scope.selectedFormIndex]._id;
-            FormService.updateFormById(id, form, render);
-
-            function render(response){
-                console.log(response);
-            }
-        }
-
-        function deleteForm(){
-            var id = $scope.form($scope.selectedFormIndex)._id;
-            FormService.deleteFormById(id, render)
-
-            function render(response){
-                console.log(response);
-            }
         }
 
         function selectForm(form){
             console.log(form);
-            var selectedForm = {
+            $scope.selectedForm = {
                 "_id": form._id,
                 "title": form.title,
                 "userId": form.userId
             };
-            console.log(selectedForm);
-            $scope.newForm.name = selectedForm.title;
-            $location.url("/forms");
-            route.reload();
         }
     }
 })();

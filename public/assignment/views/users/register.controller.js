@@ -8,13 +8,14 @@
     function RegisterController($scope, $location, UserService, $rootScope) {
         $scope.register = register;
 
-        function register(user) {
-            var newuser = UserService.createUser($scope.user, render);
-            $rootScope.currUsers = newuser;
-            $location.url("/profile");
+        function register(user){
             function render(response){
-                console.log(response);
+                $rootScope.currentUser = response;
+                $location.url("/profile");
             }
+
+            UserService.createUser($scope.user, render);
+
         }
     }
 })();

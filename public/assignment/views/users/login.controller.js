@@ -5,7 +5,7 @@
     var app = angular.module("FormBuilderApp")
     app.controller("LoginController", LoginController)
 
-    function LoginController($scope, UserService, $rootScope, $location){
+    function LoginController($scope, $window, UserService, $rootScope, $location){
         $scope.login = login;
 
         function login(user){
@@ -17,13 +17,19 @@
                     $location.url("/profile");
                 }
                 else{
-                    console.log("No response" +response);
-                    $scope.message = "Invalid credentials";
+                    console.log("No response");
+                    $window.alert("Invalid credentials");
+                    $location.url("/login");
                 }
             };
             console.log(user)
-            UserService.findUserByCredentials(user.username, user.password, render);
-
+            if (user) {
+                UserService.findUserByCredentials(user.username, user.password, render);
+            }
+            else{
+                $window.alert("Invalid credentials");
+                $location.url("/login");
+            }
         }
     }
 })();

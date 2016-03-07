@@ -42,11 +42,16 @@
         // method to find a single user
         function findUserByCredentials(username, password, callback){
             var user;
+            var count = 0;
             for (user in model.currUsers){
                 if(username === model.currUsers[user].username && password ===  model.currUsers[user].password)
                 {
                     callback(model.currUsers[user]);
+                    count = 1;
                 }
+            }
+            if (count==0){
+                callback(null);
             }
         }
 
@@ -57,17 +62,17 @@
 
         //method to create new user
         function createUser(user, callback){
+            var d = new Date();
+            var t = d.getTime();
             var newuser = {
-                "_id": new Date.getTime(),
-                "firstname": user.firstname,
-                "lastname": user.lastname,
+                "_id": t,
                 "username": user.username,
                 "password": user.password,
-                "roles": user.roles
+                "email": user.email
             };
-            $scope.currUsers.push(newuser)
+            model.currUsers.push(newuser);
 
-            callback(user)
+            callback(newuser);
         }
 
         //method to delete particular user
@@ -83,12 +88,17 @@
 
         //method to update particular user
         function updateUser(userId, user, callback){
-            for(this.user in model.currUsers){
-                if (this.user._id == userId){
-                    currUsers[indexOf(this.user)] = user;
+            for(userIndex in model.currUsers){
+                if (model.currUsers[userIndex]._id == userId){
+                    model.currUsers[userIndex].username = user.username;
+                    model.currUsers[userIndex].password = user.password;
+                    model.currUsers[userIndex].firstName = user.firstname;
+                    model.currUsers[userIndex].lastName = user.lastname;
+                    model.currUsers[userIndex].email = user.email;
+                    console.log(model.currUsers[userIndex]);
+                    callback(model.currUsers[userIndex])
                 }
             }
-            callback(user)
         }
 
     }
