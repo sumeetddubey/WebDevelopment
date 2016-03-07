@@ -35,7 +35,7 @@
                     controller: "FormFieldsController"
                 })
                 .otherwise({
-                    redirectTo: "/"
+                    redirectTo: "/home"
                 });
         });
 })();
