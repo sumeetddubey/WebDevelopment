@@ -2,8 +2,8 @@
  * Created by sumeetdubey on 2/15/16.
  */
 (function(){
-    var app = angular.module("FormBuilderApp")
-    app.controller("LoginController", LoginController)
+    var app = angular.module("FormBuilderApp");
+    app.controller("LoginController", LoginController);
 
     function LoginController($scope, $window, UserService, $rootScope, $location){
         $scope.login = login;
@@ -13,7 +13,7 @@
                 if(response){
                     console.log(response);
                     $rootScope.currentUser = response;
-                    console.log($rootScope.currentUser)
+                    console.log($rootScope.currentUser);
                     $location.url("/profile");
                 }
                 else{
@@ -22,7 +22,7 @@
                     $location.url("/login");
                 }
             };
-            console.log(user)
+            console.log(user);
             if (user) {
                 UserService.findUserByCredentials(user.username, user.password, render);
             }

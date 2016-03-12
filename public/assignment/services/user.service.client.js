@@ -78,9 +78,9 @@
         //method to delete particular user
         function deleteUserById(userId, callback){
             for(userIndex in model.currUsers){
-                if(model.currUsers[user]._id === userId){
-                    currUsers.splice(userIndex, 1);
-                    callback(currUsers);
+                if(model.currUsers[userIndex]._id === userId){
+                    model.currUsers.splice(userIndex, 1);
+                    callback(model.currUsers);
                 }
             }
         }

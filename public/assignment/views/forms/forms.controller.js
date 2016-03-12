@@ -39,7 +39,7 @@
             FormService.findAllFormsForUser(currUser._id, render);
         }
         else{
-            $location.url("/forms");
+            $location.url("/register");
         }
 
         function addForm(newForm){
@@ -80,7 +80,7 @@
         }
 
         function deleteForm(form){
-            FormService.deleteFormById(form._id, render)
+            FormService.deleteFormById(form._id, render);
 
             function render(response){
                 console.log(response);
