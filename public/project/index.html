@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="codingTutorial">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coding Tutorial</title>
+</head>
+<body ng-controller="MainController">
+<div class="container-fluid">
+    <div class="row">
+        <div ng-include="'views/header/header.view.html'"></div>
+        <div class="pages-gap"></div>
+        <div ng-view></div>
+        <div ng-include="'views/footer/footer.view.html'"></div>
+    </div>
+</div>
+
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href="css/sticky-footer-navbar.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="app.js"></script>
+<script src="config.js"></script>
+<script src="views/main/main.controller.js"></script>
+<script src="views/home/home.controller.js"></script>
+<script src="views/header/header.controller.js"></script>
+<script src="views/footer/footer.controller.js"></script>
+<script src="views/tutorial/tutorial.controller.js"></script>
+<script src="services/user.services.js"></script>
+<script src="views/user/register/register.controller.js"></script>
+<script src="views/user/profile/profile.controller.js"></script>
+<script src="views/user/login/login.controller.js"></script>
+<script src="views/dm-instructor/dminstructor.controller.js"></script>
+<script src="views/dm-student/dmstudent.controller.js"></script>
+<script src="services/tutorial.services.js"></script>
+<script src="views/dm-tutorial/dmtutorial.controller.js"></script>
+<script src="views/search/search.controller.js"></script>
+</body>
+</html>
