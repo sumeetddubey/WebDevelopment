@@ -16,11 +16,8 @@
                 .then(function(response){
                     if(response.data){
                         $rootScope.currentUser = response.data;
-                        console.log(data);
+                        console.log(respose.data);
                         $location.url = "/profile";
-                    }
-                    else{
-                        $('#login-alert').show();
                     }
                 })
         }
