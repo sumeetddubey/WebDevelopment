@@ -12,7 +12,7 @@
     })
     app.controller("FormController", FormController);
 
-    function FormController($scope, FormService, $route ,$rootScope, $location){
+    function FormController($scope, FormService, $route ,$rootScope, $location, $http){
         $scope.addForm = addForm;
         $scope.updateForm = updateForm;
         $scope.deleteForm = deleteForm;
@@ -37,6 +37,8 @@
         }
         if(currUser) {
             FormService.findAllFormsForUser(currUser._id, render);
+            $http.get("/api/form")
+                .success(render(response));
         }
         else{
             $location.url("/register");

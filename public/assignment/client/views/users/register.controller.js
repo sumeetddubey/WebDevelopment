@@ -2,8 +2,8 @@
  * Created by sumeetdubey on 2/15/16.
  */
 (function(){
-    var app = angular.module("FormBuilderApp")
-    app.controller("RegisterController", RegisterController)
+    var app = angular.module("FormBuilderApp");
+    app.controller("RegisterController", RegisterController);
 
     function RegisterController($scope, $window, $location, UserService, $rootScope) {
         $scope.register = register;
@@ -35,7 +35,8 @@
                 return;
             }
 
-            UserService.createUser($scope.user, render);
+            var response = UserService.createUser($scope.user);
+            console.log(response);
         }
     }
 })();
