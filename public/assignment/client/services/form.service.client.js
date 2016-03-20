@@ -5,7 +5,7 @@
     var app = angular.module("FormBuilderApp");
     app.factory("FormService", FormService);
 
-    function FormService(){
+    function FormService($http){
         var api = {
 
         createFormForUser: createFormForUser,
@@ -17,19 +17,19 @@
         return api;
 
         function createFormForUser(userId, form){
-            return $http.post("api/formbuilder/user/:userId/forms/createFormForUser", userId, form);
+            return $http.post('/api/assignment/user/' +userId +'/form', form);
         }
 
         function findAllFormsForUser(userId){
-            return $http.get("api/formbuilder/user/:userId/forms/findAllFormsForUser", userId);
+            return $http.get("/api/assignment/user/" +userId +'/form');
         }
 
-        function deleteFormById(userId){
-            return $http.delete("api/formbuilder/user/:userId/forms/deleteFormById", userId);
+        function deleteFormById(formId){
+            return $http.delete('/api/assignment/form/' +formId);
         }
 
-        function updateFormById(userId){
-            return $http.put("api/formbuilder/user/:userId/forms/updateFormById", userId);
+        function updateFormById(formId){
+            return $http.put('/api/assignment/form/' +formId);
         }
 
         //function createFormForUser(userid, form, callback){

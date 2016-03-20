@@ -13,7 +13,7 @@
             findAllUsers: findAllUsers,
             createUser: createUser,
             deleteUserById: deleteUserById,
-            updateUser: updateUser
+            updateUserById: updateUserById
         };
         return api;
 
@@ -37,8 +37,8 @@
             return $http.delete("/api/assignment/deleteUserById", userId);
         }
 
-        function updateUser(userId, user){
-            return $http.put("/api/assignment/updateUser", userId, user);
+        function updateUserById(userId, user){
+            return $http.put('/api/assignment/user/'+userId, user);
         }
 
         // method to find a single user

@@ -8,7 +8,7 @@ module.exports = function(app, userModel) {
     app.post('/api/assignment/user', createUser);
     app.get('/api/assignment/user/:id', findUserById);
     app.put('/api/assignment/user/:id', updateUser);
-    app.delete('/api/assignment/user/:id', deleteUserById);
+    app.delete('/api/assignment/user/:id', deleteUser);
 
     app.getUserByCredentials = getUserByCredentials;
 
@@ -47,32 +47,34 @@ module.exports = function(app, userModel) {
     function createUser(req, res){
         var user = req.body;
 
-        user = userModel.createUser(user)
-            .then(
-                function(doc){
-                    res.json(user);
-                },
-                function(err){
-                    res.status(400).send(err);
-                }
-            )
+        var newUser = userModel.createUser(user);
+        res.json(newUser);
+            //.then(
+            //    function(doc){
+            //        res.json(user);
+            //    },
+            //    function(err){
+            //        res.status(400).send(err);
+            //    }
+            //)
     }
 
     function findAllUsers(req, res){
         var users = [];
-        users = userModel.findAllUsers()
-            .then(
-                function(doc){
-                    res.json(doc);
-                },
-                function(err){
-                    res.status(400).send(err);
-                }
-            )
+        users = userModel.findAllUsers();
+        res.json(users);
+            //.then(
+            //    function(doc){
+            //        res.json(doc);
+            //    },
+            //    function(err){
+            //        res.status(400).send(err);
+            //    }
+            //)
     }
 
     function findUserById(req, res){
-        var userId = req.params.id;
+        var userId = parseInt(req.params.id);
         var user;
 
         user = userModel.findUserById(userId);
@@ -89,46 +91,31 @@ module.exports = function(app, userModel) {
 
     function findUserByUsername(req, res){
         var username = req.query.username;
-        var user = null;
+        var user;
 
-        userModel.findUserByUsername(username)
-            .then(
-                function(doc){
-                    user = doc;
-                },
-                function(err){
-                    res.status(400).send(err);
-                }
-            )
+        user = userModel.findUserByUsername(username);
+        res.json(user);
+            //.then(
+            //    function(doc){
+            //        user = doc;
+            //    },
+            //    function(err){
+            //        res.status(400).send(err);
+            //    }
+            //)
     }
 
     function updateUser(req, res){
-        var userId = req.params.id;
-        var user = req.body;
+        console.log("in update");
+        var userId = parseInt(req.params.id);
+        var userParams = req.body;
 
-        userModel.updateUserById(userId)
-            .then(
-                function(doc){
-                    res.json(doc);
-                },
-                function(err){
-                    res.status(400).send(err);
-                }
-            )
+        user = userModel.updateUserById(userId, userParams);
+            res.json(user);
     }
 
-    function deleteUserById(req, res){
+    function deleteUser(req, res){
         var userId = res.params.id;
-        var user = req.body;
-
-        userModel.deleteUserById(userId)
-            .then(
-                function(doc){
-                    res.json(doc);
-                },
-                function(err){
-                    res.status(400).send(err);
-                }
-            )
+        userModel.deleteUserById(userId);
     }
 };

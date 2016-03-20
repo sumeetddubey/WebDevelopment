@@ -40,7 +40,6 @@ module.exports = function(){
 
     function findUserById(userId){
         var user;
-        userId =  parseInt(userId);
         var count = 0;
         for(user in mock){
             if(mock[user]._id === userId) {
@@ -49,7 +48,7 @@ module.exports = function(){
             }
         }
         if(count==0){
-            return userId;
+            return null;
         }
     }
 
@@ -94,16 +93,29 @@ module.exports = function(){
 
     function updateUserById(userId, ipUser){
         var user;
+        console.log(ipUser);
         for(user in mock){
             if(mock[user]._id === userId){
-                mock[user].username = ipUser.username;
-                mock[user].password = ipUser.password;
-                mock[user].firstName = ipUser.firstname;
-                mock[user].lastName = ipUser.lastname;
-                mock[user].email = ipUser.email;
+                if(ipUser.username) {
+                    mock[user].username = ipUser.username;
+                }
+                if(ipUser.password) {
+                    mock[user].password = ipUser.password;
+                }
+                if(ipUser.firstname) {
+                    mock[user].firstName = ipUser.firstname;
+                }
+                if(ipUser.lastname) {
+                    mock[user].lastName = ipUser.lastname;
+                }
+                if(ipUser.email) {
+                    mock[user].email = ipUser.email;
+                }
+                break;
             }
         }
-        return user;
+        console.log(mock[user]);
+        return mock[user];
     }
 
 

@@ -1,18 +1,16 @@
 /**
  * Created by sumeetdubey on 3/17/16.
  */
-var mock = require("./form.mock.json");
 
-//var q = require("q");
-
-module.exports = function(mock){
+module.exports = function(uuid){
+    var mock = require("./form.mock.json");
 
     //user schema
     //var UserSchema = require("./user.schema.server.js")
 
     var api = {
         createForm: createForm,
-        findAllFormsByUserId: findAllFormsByUserId,
+        findFormsByUserId: findFormsByUserId,
         findFormById: findFormById,
         findFormByTitle: findFormByTitle,
         deleteUserById: deleteFormById,
@@ -22,18 +20,13 @@ module.exports = function(mock){
     return api;
 
     function createForm(ipForm){
-        var d = new Date();
-        var t = d.getTime();
-        var user = {
-            "_id": t,
-            "title": ipUser.username,
-            "userId": ipUser.password,
-        };
-        mock.push(forms);
-        return forms;
+        ipForm._id = uuid.v1();
+        ipForm.options = [];
+        mock.push(ipForm);
+        return ipForm;
     }
 
-    function findAllFormsByUserId(userId){
+    function findFormsByUserId(userId){
         var userForms = [];
         var form;
         for(form in mock){
@@ -48,9 +41,9 @@ module.exports = function(mock){
         var form;
         var count = 0;
         for(form in mock){
-            if(mock[user]._id === userId) {
+            if(mock[form]._id === formId) {
                 count = 1;
-                return user;
+                return mock[form];
             }
         }
         if(count==0){
@@ -89,6 +82,6 @@ module.exports = function(mock){
                 mock[form].title = ipForm.title;
             }
         }
-        return form;
+        return mock[form];
     }
 };

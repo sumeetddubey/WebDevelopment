@@ -6,7 +6,7 @@
         .module("FormBuilderApp")
         .controller("ProfileController", ProfileController);
 
-    function ProfileController($scope, $rootScope, UserService, $location){
+    function ProfileController($scope, $rootScope, UserService, $location, $route){
         $scope.update = update;
 
         function init(){
@@ -29,7 +29,17 @@
 
         function update(user){
             currUser = $rootScope.currentUser;
-            UserService.updateUserById(currUser._id, $scope.user);
+            UserService.updateUserById(currUser._id, user)
+                .then(
+                    function(response){
+                        if(response.data){
+                            $rootScope.currentUser = response.data;
+                            console.log(response.data);
+                            $route.reload();
+                            $location.url("/profile");
+                        }
+                    }
+                )
         }
 
         //function update(user) {

@@ -9,10 +9,10 @@
         $scope.register = register;
 
         function register(user){
-            function render(response){
-                $rootScope.currentUser = response;
-                $location.url("/profile");
-            }
+            //function render(response){
+            //    $rootScope.currentUser = response;
+            //    $location.url("/profile");
+            //}
 
             if (user == null) {
                 $window.alert("Please fill in the required fields");
@@ -35,8 +35,16 @@
                 return;
             }
 
-            var response = UserService.createUser($scope.user);
-            console.log(response);
+            UserService.createUser($scope.user)
+                .then(
+                    function(response){
+                        if(response.data){
+                            $rootScope.currentUser = response.data;
+                            $location.url('/profile');
+                            console.log(response.data);
+                        }
+                    }
+                );
         }
     }
 })();
