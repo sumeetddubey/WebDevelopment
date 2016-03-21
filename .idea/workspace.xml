@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="424e18aa-904f-46a3-b711-682f3306b5da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/client/directives/form-field.html" afterPath="$PROJECT_DIR$/public/assignment/client/directives/form-field.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/client/views/forms/field.controller.js" afterPath="$PROJECT_DIR$/public/assignment/client/views/forms/field.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/client/views/forms/field.view.html" afterPath="$PROJECT_DIR$/public/assignment/client/views/forms/field.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/client/views/forms/forms.controller.js" afterPath="$PROJECT_DIR$/public/assignment/client/views/forms/forms.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/client/views/forms/forms.view.html" afterPath="$PROJECT_DIR$/public/assignment/client/views/forms/forms.view.html" />
     </list>
     <list id="06abd0ce-0886-4719-a12a-8c7e777881a1" name="Failed commit: Default" comment="pushing to main repo" />
@@ -29,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="forms.view.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="forms.view.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/assignment/client/views/forms/forms.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0">
-              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.6413302">
+              <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -103,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="field.view.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="field.view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assignment/client/views/forms/field.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10688836">
-              <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+            <state vertical-scroll-proportion="-11.875">
+              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -201,8 +197,8 @@
         <option value="$PROJECT_DIR$/public/assignment/client/views/forms/forms.controller.js" />
         <option value="$PROJECT_DIR$/public/assignment/client/views/forms/field.controller.js" />
         <option value="$PROJECT_DIR$/public/assignment/client/directives/form-field.html" />
-        <option value="$PROJECT_DIR$/public/assignment/client/views/forms/forms.view.html" />
         <option value="$PROJECT_DIR$/public/assignment/client/views/forms/field.view.html" />
+        <option value="$PROJECT_DIR$/public/assignment/client/views/forms/forms.view.html" />
       </list>
     </option>
   </component>
@@ -875,7 +871,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458531375734</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="minor fixes in forms in fields">
+      <created>1458532161594</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1458532161594</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView">
@@ -946,7 +948,8 @@
     <MESSAGE value="committing major server changes" />
     <MESSAGE value="more server commits" />
     <MESSAGE value="lots of changes (forms, fields, directives, uuid)" />
-    <option name="LAST_COMMIT_MESSAGE" value="lots of changes (forms, fields, directives, uuid)" />
+    <MESSAGE value="minor fixes in forms in fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor fixes in forms in fields" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1339,14 +1342,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/client/views/forms/forms.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assignment/client/views/forms/field.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1359,8 +1354,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assignment/client/views/forms/field.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10688836">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assignment/client/views/forms/forms.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6413302">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
           <folding />
         </state>
       </provider>
