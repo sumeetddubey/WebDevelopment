@@ -5,7 +5,7 @@
     var app = angular.module("FormBuilderApp");
     app.controller("FieldController", FieldController);
 
-    function FieldController($scope, $location, FieldService, $routeParams){
+    function FieldController($scope, $rootScope, $location, FieldService, $routeParams){
         $scope.$location = $location;
         $scope.fieldType = [
             'Single Line Text Field',
@@ -17,6 +17,7 @@
         ];
 
         $scope.fields = [];
+        $scope.formTitle = $rootScope.form.title;
         FieldService.getFieldsForForm($routeParams.formId)
             .then(
                 function(response){

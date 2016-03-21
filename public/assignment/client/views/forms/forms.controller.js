@@ -112,6 +112,7 @@
         }
 
         function formFields(form){
+            $rootScope.form = form;
             $location.url('/form/'+form._id+'/fields');
         }
     }
