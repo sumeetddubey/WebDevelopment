@@ -28,9 +28,10 @@
             return $http.delete('/api/assignment/form/' +formId);
         }
 
-        function updateFormById(formId){
-            return $http.put('/api/assignment/form/' +formId);
+        function updateFormById(formId, form){
+            return $http.put('/api/assignment/form/' +formId, form);
         }
+
 
         //function createFormForUser(userid, form, callback){
         //    var d = new Date();

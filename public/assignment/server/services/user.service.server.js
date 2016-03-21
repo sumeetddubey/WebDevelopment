@@ -21,14 +21,6 @@ module.exports = function(app, userModel) {
 
         var user = userModel.findUserByCredentials(credentials);
         res.json(user);
-            //.then(
-            //    function(doc){
-            //        res.json(user);
-            //    },
-            //    function(err){
-            //        res.status(400).send(err);
-            //    }
-            //)
     }
 
     function findUser(req, res){
@@ -49,28 +41,12 @@ module.exports = function(app, userModel) {
 
         var newUser = userModel.createUser(user);
         res.json(newUser);
-            //.then(
-            //    function(doc){
-            //        res.json(user);
-            //    },
-            //    function(err){
-            //        res.status(400).send(err);
-            //    }
-            //)
     }
 
     function findAllUsers(req, res){
         var users = [];
         users = userModel.findAllUsers();
         res.json(users);
-            //.then(
-            //    function(doc){
-            //        res.json(doc);
-            //    },
-            //    function(err){
-            //        res.status(400).send(err);
-            //    }
-            //)
     }
 
     function findUserById(req, res){
@@ -79,14 +55,6 @@ module.exports = function(app, userModel) {
 
         user = userModel.findUserById(userId);
         res.json(user);
-            //.then(
-            //    function(doc){
-            //        user = doc;
-            //    },
-            //    function(err){
-            //        res.status(400).send(err);
-            //    }
-            //)
     }
 
     function findUserByUsername(req, res){
@@ -95,14 +63,6 @@ module.exports = function(app, userModel) {
 
         user = userModel.findUserByUsername(username);
         res.json(user);
-            //.then(
-            //    function(doc){
-            //        user = doc;
-            //    },
-            //    function(err){
-            //        res.status(400).send(err);
-            //    }
-            //)
     }
 
     function updateUser(req, res){

@@ -6,17 +6,18 @@
     app.config(function ($routeProvider) {
         $routeProvider
             .when("/formfields", {
-                templateUrl: "views/forms/form-fields.view.html",
+                templateUrl: "views/forms/field.view.html",
                 controller: "FormFieldsController"
             })
     })
     app.controller("FormController", FormController);
 
-    function FormController($scope, FormService, $rootScope, $location){
+    function FormController($scope, FormService, $rootScope, $location, $route){
         $scope.addForm = addForm;
         $scope.updateForm = updateForm;
         $scope.deleteForm = deleteForm;
         $scope.selectForm = selectForm;
+        $scope.formFields = formFields;
 
         var userForms=[];
         var currUser;
@@ -57,17 +58,6 @@
         }
 
         function addForm(newForm){
-            //function render(response){
-            //    if(response) {
-            //        console.log(response);
-            //        $location.url("/forms");
-            //        $route.reload();
-            //    }
-            //    else{
-            //        $location.url("/forms");
-            //        $route.reload();
-            //    }
-            //}
             console.log(newForm);
             console.log($rootScope.currentUser);
 
@@ -76,6 +66,7 @@
                     .then(
                         function(response){
                             $location.url('/forms');
+                            $route.reload();
                         }
                     )
             }
@@ -87,10 +78,12 @@
         function updateForm(form){
             if(form) {
                 var id = $scope.selectedForm._id;
+                console.log($scope.selectedForm);
                 FormService.updateFormById(id, $scope.selectedForm)
                     .then(
                         function(response){
                             $location.url('/forms');
+                            $route.reload();
                         }
                     )
             }
@@ -98,10 +91,13 @@
         }
 
         function deleteForm(form){
+            console.log(form);
             FormService.deleteFormById(form._id)
                 .then(
                     function(response){
+                        console.log('in response');
                         $location.url('/forms');
+                        $route.reload();
                     }
                 )
         }
@@ -113,6 +109,10 @@
                 "title": form.title,
                 "userId": form.userId
             };
+        }
+
+        function formFields(form){
+            $location.url('/form/'+form._id+'/fields');
         }
     }
 })();

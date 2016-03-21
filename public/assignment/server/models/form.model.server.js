@@ -2,7 +2,8 @@
  * Created by sumeetdubey on 3/17/16.
  */
 
-module.exports = function(uuid){
+module.exports = function(){
+    var uuid = require('node-uuid');
     var mock = require("./form.mock.json");
 
     //user schema
@@ -13,17 +14,26 @@ module.exports = function(uuid){
         findFormsByUserId: findFormsByUserId,
         findFormById: findFormById,
         findFormByTitle: findFormByTitle,
-        deleteUserById: deleteFormById,
-        updateFormById: updateFormById
+        deleteFormById: deleteFormById,
+        updateFormById: updateFormById,
+        getAllFormFields: getAllFormFields,
+        getFormFieldById: getFormFieldById,
+        deleteFieldById: deleteFieldById,
+        createField: createField,
+        updateField: updateField,
+
     };
 
     return api;
 
-    function createForm(ipForm){
-        ipForm._id = uuid.v1();
-        ipForm.options = [];
+    function createForm(userId, ipForm){
+        var uuid1 = uuid.v1();
+        ipForm._id = uuid1;
+        ipForm.userId = userId;
+        ipForm.fields = [];
         mock.push(ipForm);
-        return ipForm;
+        var forms = findFormsByUserId(userId);
+        return forms;
     }
 
     function findFormsByUserId(userId){
@@ -78,10 +88,70 @@ module.exports = function(uuid){
     function updateFormById(formId, ipForm){
         var form;
         for(form in mock){
-            if(mock[form]._id === userId){
+            if(mock[form]._id === formId){
                 mock[form].title = ipForm.title;
             }
         }
+        console.log(mock);
         return mock[form];
+    }
+
+    function getAllFormFields(formId){
+        for(var form in mock){
+            if(mock[form]._id === formId){
+                console.log("the returned fields are" +mock[form].fields);
+                return mock[form].fields;
+            }
+        }
+    }
+
+    function getFormFieldById(formId, fieldId){
+        var fields = getAllFormFields(formId);
+        for(var field in fields){
+            if (fields[field]._id === fieldId){
+                return fields[field];
+            }
+        }
+    }
+
+    function deleteFieldById(formId, fieldId){
+        var fields = getAllFormFields(formId);
+        for(var field in fields){
+            if (fields[field]._id === fieldId){
+                mock.splice(fields[field]._id, 1);
+            }
+        }
+    }
+
+    function createField(formId, newField){
+        newField._id = uuid.v1();
+        var form = findFormById(formId);
+        if(form.fields){
+            form.fields.push(newField);
+        }
+        else{
+            form.fields = [];
+            form.fields.push(newForm);
+        }
+    }
+
+    function updateField(formId, fieldId, field){
+        var form = findFormById(formId);
+        var fields = form.fields;
+        for(var field in fields){
+            if(fields[field]._id === fieldId){
+                for(var i in field){
+                    fields[field][i] = field[i];
+                }
+                console.log(fields[field]);
+            }
+            return field;
+        }
+    }
+
+    function updateAllFormFields(formId, field) {
+        var form = findById(formId);
+        form.fields = field;
+        return field;
     }
 };

@@ -12,6 +12,14 @@ body {
  * Global add-ons
  */
 
+.padding{
+    padding-top: 2%;
+}
+
+.padding-left{
+    padding-left: 2%;
+}
+
 .sub-header {
     padding-bottom: 10px;
     border-bottom: 1px solid #eee;

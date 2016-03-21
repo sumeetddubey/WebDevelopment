@@ -30,12 +30,16 @@
                     templateUrl: "views/users/register.view.html",
                     controller: "RegisterController"
                 })
-                .when("/formfields", {
-                    templateUrl: "views/forms/form-fields.view.html",
-                    controller: "FormFieldsController"
+                .when("/fields", {
+                    templateUrl: "views/forms/field.view.html",
+                    controller: "FieldController"
+                })
+                .when("/form/:formId/fields", {
+                    templateUrl: "views/forms/field.view.html",
+                    controller: "FieldController"
                 })
                 .otherwise({
-                    redirectTo: "/home"
+                    redirectTo: "/"
                 });
         });
 })();

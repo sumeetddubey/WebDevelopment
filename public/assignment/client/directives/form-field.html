@@ -1,0 +1,59 @@
+<div class="form-group padding" ng-switch="data.type">
+    <div ng-switch-when="TEXT">
+        <label for="textField">
+            {{data.label}}
+        </label>
+        <input id="textField" type="text" clsss="form-control" placeholder="{{data.placeholder}}">
+    </div>
+
+    <div ng-switch-when="TEXTAREA">
+        <label for="textField">
+            {{data.label}}
+        </label>
+        <textarea id="textAreaFeild" clsss="form-control" placeholder="{{data.placeholder}}"></textarea>
+    </div>
+
+    <div ng-switch-when="DATE">
+        <label for="dateField">
+            {{data.label}}
+        </label>
+        <input id="dateField" type="date" clsss="form-control" placeholder="{{data.placeholder}}">
+    </div>
+
+    <div ng-switch-when="EMAIL">
+        <label for="emailField">
+            {{data.label}}
+        </label>
+        <input id="emailField" type="email" clsss="form-control" placeholder="{{data.placeholder}}">
+    </div>
+
+    <div ng-switch-when="PASSWORD">
+        <label for="passwordField">
+            {{data.label}}
+        </label>
+        <input id="passwordField" type="password" clsss="form-control" placeholder="{{data.placeholder}}">
+    </div>
+
+    <div ng-switch-when="OPTIONS">
+        <label for="optionsField">{{data.label}}</label>
+        <select name="repeatSelect" id="optionsField" class="form-control">
+            <option ng-repeat="option in data.options" value="{{option.value}}">{{option.label}}</option>
+        </select>
+    </div>
+
+    <div ng-switch-when="CHECKBOXES">
+        <label for="checkboxField">data.label</label>
+        <div ng-repeat="option in data.options" class="checkbox" id="checkboxField">
+            <label><input type="checkbox" ng-true-value="{{option.value}}" ng-false-value="">{{option.label}}</label>
+        </div>
+    </div>
+
+    <div ng-switch-when="RADIOS">
+        <label for="radioField">data.label</label>
+        <div ng-repeat="option in data.options" class="checkbox" id="radioField">
+            <label><input type="checkbox" ng-true-value="{{option.value}}" ng-false-value="">{{option.label}}</label>
+        </div>
+    </div>
+    
+    <div ng-switch-default>default</div>
+</div>

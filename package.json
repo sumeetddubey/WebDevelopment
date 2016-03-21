@@ -23,8 +23,11 @@
     "npm": ">= 1.0.0"
   },
   "dependencies": {
+    "bower": "^1.7.7",
     "express": "^3.4.8",
-    "mongoose": "^4.4.8"
+    "mongoose": "^4.4.8",
+    "node-uuid": "^1.4.7",
+    "uuid": "^2.0.1"
   },
   "devDependencies": {},
   "bundleDependencies": [],
