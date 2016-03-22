@@ -21,7 +21,7 @@ module.exports = function(){
         deleteFieldById: deleteFieldById,
         createField: createField,
         updateField: updateField,
-
+        reorderFormFields: reorderFormFields
     };
 
     return api;
@@ -115,10 +115,15 @@ module.exports = function(){
     }
 
     function deleteFieldById(formId, fieldId){
+        console.log("in deletion");
         var fields = getAllFormFields(formId);
+        console.log(fields);
+        console.log(fieldId);
         for(var field in fields){
             if (fields[field]._id === fieldId){
-                mock.splice(fields[field]._id, 1);
+                fields.splice(field, 1);
+                console.log("entry deleted");
+                return fields;
             }
         }
     }
@@ -128,30 +133,44 @@ module.exports = function(){
         var form = findFormById(formId);
         if(form.fields){
             form.fields.push(newField);
+            console.log("newly created form ");
+            console.log(form);
+            return form;
         }
         else{
             form.fields = [];
             form.fields.push(newForm);
+            return form;
         }
     }
 
     function updateField(formId, fieldId, field){
         var form = findFormById(formId);
         var fields = form.fields;
-        for(var field in fields){
-            if(fields[field]._id === fieldId){
-                for(var i in field){
-                    fields[field][i] = field[i];
+        for(var fieldIndex in fields){
+            if(fields[fieldIndex]._id === fieldId){
+                if(field.placeholder){
+                    fields[fieldIndex].placeholder = field.placeholder;
                 }
-                console.log(fields[field]);
+                if(field.label){
+                    fields[fieldIndex].label = field.label;
+                }
+                if(field.options){
+                    fields[fieldIndex].options = field.options;
+                }
+                console.log(fields[fieldIndex]);
+                return fields[fieldIndex];
             }
-            return field;
         }
     }
 
-    function updateAllFormFields(formId, field) {
-        var form = findById(formId);
-        form.fields = field;
-        return field;
+
+    function reorderFormFields(formId, ipFields) {
+        var form = findFormById(formId);
+        console.log(" in reorder");
+        console.log(ipFields);
+        console.log(form.fields);
+        form.fields = ipFields;
+        return form.fields;
     }
 };

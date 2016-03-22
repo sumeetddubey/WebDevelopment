@@ -12,9 +12,9 @@
             createFieldForForm: createFieldForForm,
             getFieldsForForm: getFieldsForForm,
             getFieldForForm: getField,
-            deleteFieldByForm: deleteField,
+            deleteField: deleteField,
             updateField: updateField,
-            rearrangeFields: rearrangeFields
+            reorderFields: reorderFields
         };
 
         function createFieldForForm(formId, field) {
@@ -37,7 +37,7 @@
             return $http.put('/api/assignment/form/'+formId+'/field/'+fieldId, field);
         }
 
-        function rearrangeFields(formId, fields) {
+        function reorderFields(formId, fields) {
             return $http.put('/api/assignment/form/'+formId+'/field', fields);
         }
     }

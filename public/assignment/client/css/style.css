@@ -20,6 +20,10 @@ body {
     padding-left: 2%;
 }
 
+.btn-padding{
+    padding-top: 6%;
+}
+
 .sub-header {
     padding-bottom: 10px;
     border-bottom: 1px solid #eee;

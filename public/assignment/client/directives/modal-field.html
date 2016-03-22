@@ -1,0 +1,58 @@
+<div class="form-group padding" ng-switch="data.type">
+    <div ng-switch-when="TEXT">
+        <label for="textLabel">
+            Label
+        </label>
+        <input id="textLabel" type="text" class="form-control" ng-model="data.label">
+
+        <label for="textPlaceholder">
+            Placeholder
+        </label>
+        <input id="textPlaceholder" type="text" class="form-control" ng-model="data.placeholder">
+    </div>
+
+    <div ng-switch-when="TEXTAREA">
+        <label for="textareaLabel">
+            Label
+        </label>
+        <input id="textareaLabel" type="text" class="form-control" ng-model="data.label">
+
+        <label for="textareaPlaceholder">
+            Placeholder
+        </label>
+        <input id="textareaPlaceholder" type="text" class="form-control" ng-model="data.placeholder">
+    </div>
+
+    <div ng-switch-when="DATE">
+        <label for="dateLabel">
+            Label
+        </label>
+        <input id="dateLabel" type="text" class="form-control" ng-model="data.placeholder">
+    </div>
+
+    <div ng-switch-when="OPTIONS">
+        <label for="optionsFieldLabel">Label</label>
+        <input id="optionsFieldLabel" type="text" class="form-control" ng-model="data.label">
+
+        <label for="optionsField">Options</label>
+        <textarea id="optionsField" class="form-control" ng-model="data.options"></textarea>
+    </div>
+
+    <div ng-switch-when="CHECKBOXES">
+        <label for="checkboxFieldLabel">Label</label>
+        <input id="checkboxFieldLabel" type="text" class="form-control" ng-model="data.label">
+
+        <label for="checkboxField">Options</label>
+        <textarea id="checkboxField" class="form-control" ng-model="data.options"></textarea>
+    </div>
+
+    <div ng-switch-when="RADIOS">
+        <label for="radioFieldLabel">Label</label>
+        <input id="radioFieldLabel" type="text" class="form-control" ng-model="data.label">
+
+        <label for="radioField">Options</label>
+        <textarea id="radioField" class="form-control" ng-model="data.options"></textarea>
+    </div>
+
+    <!--<div ng-switch-default>default</div>-->
+</div>

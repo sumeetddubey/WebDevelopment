@@ -44,7 +44,7 @@ module.exports = function (app, formModel) {
     function updateAllFormFields(req, res) {
         var formId = req.params.formId;
         var fields = req.body;
-        res.json(formModel.updateAllFormFields(formId, fields));
+        res.json(formModel.reorderFormFields(formId, fields));
     }
 
 };

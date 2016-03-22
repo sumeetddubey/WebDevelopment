@@ -26,6 +26,7 @@
     "bower": "^1.7.7",
     "express": "^3.4.8",
     "mongoose": "^4.4.8",
+    "ng-dialog": "^0.5.9",
     "node-uuid": "^1.4.7",
     "uuid": "^2.0.1"
   },
