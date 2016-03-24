@@ -27,7 +27,7 @@
         <label for="dateLabel">
             Label
         </label>
-        <input id="dateLabel" type="text" class="form-control" ng-model="data.placeholder">
+        <input id="dateLabel" type="text" class="form-control" ng-model="data.label">
     </div>
 
     <div ng-switch-when="OPTIONS">
@@ -35,7 +35,7 @@
         <input id="optionsFieldLabel" type="text" class="form-control" ng-model="data.label">
 
         <label for="optionsField">Options</label>
-        <textarea id="optionsField" class="form-control" ng-model="data.options"></textarea>
+        <textarea id="optionsField" class="form-control" ng-model="data.choices"></textarea>
     </div>
 
     <div ng-switch-when="CHECKBOXES">
@@ -43,7 +43,7 @@
         <input id="checkboxFieldLabel" type="text" class="form-control" ng-model="data.label">
 
         <label for="checkboxField">Options</label>
-        <textarea id="checkboxField" class="form-control" ng-model="data.options"></textarea>
+        <textarea id="checkboxField" class="form-control" ng-model="data.choices"></textarea>
     </div>
 
     <div ng-switch-when="RADIOS">
@@ -51,7 +51,7 @@
         <input id="radioFieldLabel" type="text" class="form-control" ng-model="data.label">
 
         <label for="radioField">Options</label>
-        <textarea id="radioField" class="form-control" ng-model="data.options"></textarea>
+        <textarea id="radioField" class="form-control" ng-model="data.choices"></textarea>
     </div>
 
     <!--<div ng-switch-default>default</div>-->

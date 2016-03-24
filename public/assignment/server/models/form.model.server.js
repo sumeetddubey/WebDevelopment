@@ -77,12 +77,13 @@ module.exports = function(){
     }
 
     function deleteFormById(formId){
-        var form;
         for(form in mock){
             if(mock[form]._id === formId){
                 mock.splice(form, 1);
             }
         }
+        var currUserForms = findFormById(formId);
+        return currUserForms;
     }
 
     function updateFormById(formId, ipForm){
@@ -158,8 +159,21 @@ module.exports = function(){
                 if(field.options){
                     fields[fieldIndex].options = field.options;
                 }
+                if(field.choices){
+                    var arr = [];
+                    var newOptions = [];
+                    arr = field.choices.split(["\n"]);
+                    for (var element in arr){
+                        var attributes = arr[element].split([':']);
+                        var label = attributes[0];
+                        var value = attributes[1];
+                        var newOption = {"label": label, "value": value};
+                        newOptions.push(newOption);
+                    }
+                    fields[fieldIndex].options = newOptions;
+                }
                 console.log(fields[fieldIndex]);
-                return fields[fieldIndex];
+                return fields;
             }
         }
     }

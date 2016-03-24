@@ -96,8 +96,10 @@
                 .then(
                     function(response){
                         console.log('in response');
-                        $location.url('/forms');
-                        $route.reload();
+                        $scope.userForms = response.data;
+                    },
+                    function(err){
+                        console.log(err);
                     }
                 )
         }

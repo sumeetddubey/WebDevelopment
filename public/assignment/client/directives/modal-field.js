@@ -13,6 +13,7 @@
             },
 
             templateUrl: "./directives/modal-field.html"
-        }
+        };
+
     }
 })();

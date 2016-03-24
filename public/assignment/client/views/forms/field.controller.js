@@ -30,9 +30,9 @@
                 .sortable({
                     handle: '.handle',
                     update: function(event, ui){
-                        var data = $( ".selector" ).sortable( "serialize" );
+                        var data = $( ".selector" ).sortable("serialize");
                         console.log(data);
-                        reorder(data);
+                        //reorder(data);
                     }
                 })
         });
@@ -131,7 +131,13 @@
 
         function updateField(field){
             $scope.currentField = field;
-            $('#fieldModal').modal();
+            field.choices = '';
+
+            for(var index in field.options){
+                field.choices = field.choices +field.options[index].label +": " +field.options[index].value +"\n";
+            }
+
+            $('#fieldModal').modal(field);
         }
 
         function updateFieldFromModal(field){
@@ -139,6 +145,7 @@
                 .then(
                     function(response){
                         if(response){
+                            $scope.fields = response.data;
                             console.log(response.data);
                             $('#fieldModal').modal('hide');
                         }

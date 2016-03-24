@@ -8,7 +8,7 @@ module.exports = function (app, formModel) {
     app.delete('/api/assignment/form/:formId/field/:fieldId', deleteFormField);
     app.post('/api/assignment/form/:formId/field', createFormField);
     app.put('/api/assignment/form/:formId/field/:fieldId', updateFormField);
-    app.put('/api/assignment/form/:formId/field', updateAllFormFields);
+    app.put('/api/assignment/form/:formId/field', reorderFields);
 
     function getFormFields(req, res) {
         var formId = req.params.formId;
@@ -41,7 +41,7 @@ module.exports = function (app, formModel) {
         res.json(formModel.updateField(formId, fieldId, field));
     }
 
-    function updateAllFormFields(req, res) {
+    function reorderFields(req, res) {
         var formId = req.params.formId;
         var fields = req.body;
         res.json(formModel.reorderFormFields(formId, fields));
