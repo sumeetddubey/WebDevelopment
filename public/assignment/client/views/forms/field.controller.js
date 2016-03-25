@@ -6,15 +6,6 @@
     app.controller("FieldController", FieldController);
 
     function FieldController($scope, $rootScope, FieldService, $routeParams){
-        //$scope.$location = $location;
-        //$scope.fieldType = [
-        //    'Single Line Text Field',
-        //    'Multi Line Text Field',
-        //    'Date Field',
-        //    'Dropdown Field',
-        //    'Checkboxes Field',
-        //    'Radio Buttons Field'
-        //];
 
         $scope.addField = addField;
         $scope.updateField = updateField;
@@ -25,20 +16,15 @@
         var currentFormId = $routeParams.formId;
         $scope.formTitle = $rootScope.form.title;
 
-        $(function() {
-            $("#sortable")
-                .sortable({
-                    handle: '.handle',
-                    update: function(event, ui){
-                        var data = $( ".selector" ).sortable("serialize");
-                        console.log(data);
-                        //reorder(data);
-                    }
-                })
-        });
+        $scope.uiSortable = {
+            handle: '.handle',
+            update: function(event, ui) {
+                reorder();
+            }
+        };
 
         function reorder(data){
-            FieldService.reorderFields(currentFormId, data)
+            FieldService.reorderFields(currentFormId, $scope.fields)
                 .then(
                     function(response){
                         if(response){

@@ -2,6 +2,6 @@
  * Created by sumeetdubey on 2/15/16.
  */
 (function(){
-    var app = angular.module("FormBuilderApp",['ngRoute']);
+    var app = angular.module("FormBuilderApp",['ngRoute', 'ui.sortable']);
 })();
 

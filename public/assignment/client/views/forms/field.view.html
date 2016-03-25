@@ -5,7 +5,7 @@
         <li role="presentation" class="active"><a href="#/fields">Fields</a></li>
     </ul>
 
-    <div id="sortable" class="table-responsive padding" ng-model="fields">
+    <div ui-sortable="uiSortable" class="table-responsive padding" ng-model="fields">
         <table class="table">
             <div class="row col-xs-12 " ng-repeat="field in fields">
                 <div class="col-xs-6">
