@@ -7,7 +7,7 @@ module.exports = function(){
     var mock = require("./form.mock.json");
 
     //user schema
-    //var UserSchema = require("./user.schema.server.js")
+    //var UserSchema = require("./user.schema.client.js")
 
     var api = {
         createForm: createForm,

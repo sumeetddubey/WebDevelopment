@@ -1,5 +1,5 @@
 /**
- * Created by sumeetdubey on 3/17/16.
+ * Created by sumeetdubey on 3/26/16.
  */
 
 module.exports = function(){
@@ -71,7 +71,7 @@ module.exports = function(){
         var count = 0;
 
         for (user in mock){
-            if(mock[user].username === credentials.username && mock[user].password === credentials.password){
+            if(mock[user].email === credentials.email && mock[user].password === credentials.password){
                 count = 1;
                 return (mock[user]);
             }
@@ -89,6 +89,7 @@ module.exports = function(){
                 mock.splice(user, 1);
             }
         }
+        return null;
     }
 
     function updateUserById(userId, ipUser){
