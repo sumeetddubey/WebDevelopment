@@ -1,22 +1,22 @@
 [
-  {"_id": "001", "title": "Contacts", "userId": 123,
+  {"title": "Contacts", "userId": "56ff13a0893d7e6d51642abb",
     "fields": [
-      {"_id": "111", "label": "First Name", "type": "TEXT", "placeholder": "First Name"},
-      {"_id": "222", "label": "Last Name", "type": "TEXT", "placeholder": "Last Name"},
-      {"_id": "333", "label": "Address", "type": "TEXT", "placeholder": "Address"},
-      {"_id": "444", "label": "State", "type": "OPTIONS", "options": [
+      {"label": "First Name", "type": "TEXT", "placeholder": "First Name"},
+      {"label": "Last Name", "type": "TEXT", "placeholder": "Last Name"},
+      {"label": "Address", "type": "TEXT", "placeholder": "Address"},
+      {"label": "State", "type": "OPTIONS", "options": [
         {"label": "Massachusetts", "value": "MA"},
         {"label": "New Hampshire", "value": "NH"}
       ]},
-      {"_id": "555", "label": "ZIP", "type": "TEXT", "placeholder": "ZIP"},
-      {"_id": "666", "label": "Email", "type": "EMAIL", "placeholder": "Email"}
+      {"label": "ZIP", "type": "TEXT", "placeholder": "ZIP"},
+      {"label": "Email", "type": "EMAIL", "placeholder": "Email"}
     ]
   },
-  {"_id": "010", "title": "ToDo", "userId": 234,
+  {"title": "ToDo", "userId": "56ff13a0893d7e6d51642abd",
     "fields": [
-      {"_id": "777", "label": "Title", "type": "TEXT", "placeholder": "Title"},
-      {"_id": "888", "label": "Description", "type": "TEXTAREA", "placeholder": "Title"},
-      {"_id": "999", "label": "Due Date", "type": "DATE"}
+      {"label": "Title", "type": "TEXT", "placeholder": "Title"},
+      {"label": "Description", "type": "TEXTAREA", "placeholder": "Title"},
+      {"label": "Due Date", "type": "DATE"}
     ]
   }
 ]

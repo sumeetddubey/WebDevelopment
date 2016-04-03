@@ -15,9 +15,9 @@
             $scope.user = {
                 "username": user.username,
                 "password": user.password,
-                "firstname": user.firstName,
-                "lastname": user.lastName,
-                "email": user.email
+                "firstName": user.firstName,
+                "lastName": user.lastName,
+                "emails": user.emails
             };
             $location.url("/profile");
             $scope.$location = $location;
@@ -34,9 +34,8 @@
                     function(response){
                         if(response.data){
                             $rootScope.currentUser = response.data;
+                            $scope.user = response.data;
                             console.log(response.data);
-                            $route.reload();
-                            $location.url("/profile");
                         }
                     }
                 )

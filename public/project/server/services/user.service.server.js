@@ -12,6 +12,13 @@ module.exports = function(app, userModel) {
 
     app.getUserByCredentials = getUserByCredentials;
 
+    //function sendCode(req, res){
+    //    console.log("in user service");
+    //    //var code = req.body;
+    //    userModel.sendCodeToApi();
+    //    //res.json(UserModel.sendCodeToApi(code));
+    //}
+
     function getUserByCredentials(req, res){
         console.log("in finduserbycredentials");
         var credentials = {

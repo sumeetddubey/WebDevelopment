@@ -13,6 +13,7 @@
     app.controller("FormController", FormController);
 
     function FormController($scope, FormService, $rootScope, $location, $route){
+        $scope.findallForms = findAllForms;
         $scope.addForm = addForm;
         $scope.updateForm = updateForm;
         $scope.deleteForm = deleteForm;
@@ -37,6 +38,13 @@
         //    }
         //}
         if(currUser) {
+            findAllForms();
+        }
+        else{
+            $location.url("/register");
+        }
+
+        function findAllForms(){
             FormService.findAllFormsForUser(currUser._id)
                 .then(
                     function(response){
@@ -53,10 +61,6 @@
                     }
                 )
         }
-        else{
-            $location.url("/register");
-        }
-
         function addForm(newForm){
             console.log(newForm);
             console.log($rootScope.currentUser);
@@ -96,7 +100,7 @@
                 .then(
                     function(response){
                         console.log('in response');
-                        $scope.userForms = response.data;
+                        findAllForms();
                     },
                     function(err){
                         console.log(err);
