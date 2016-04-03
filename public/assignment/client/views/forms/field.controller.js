@@ -29,7 +29,6 @@
                     function(response){
                         if(response){
                             $scope.fields = response.data;
-                            console.log(response.data);
                         }
                     },
                     function(err){
@@ -42,9 +41,7 @@
             .then(
                 function(response){
                     if(response) {
-                        console.log(response.data);
                         $scope.fields = response.data;
-                        console.log($scope.fields);
                     }
                 }
             );
@@ -52,7 +49,6 @@
         function addField(ipField) {
             var field;
             var type = ipField.type;
-            console.log("in add field");
             if (ipField) {
                 if (type === "TEXT") {
                     field = {"label": "New Text Field", "type": "TEXT", "placeholder": "New Field"}
@@ -101,8 +97,6 @@
                         function (response) {
                             if (response) {
                                 $scope.fields = response.data.fields;
-                                console.log($scope.fields);
-                                //$route.reload();
                             }
                         },
                         function (err) {
@@ -132,7 +126,6 @@
                     function(response){
                         if(response){
                             $scope.fields = response.data;
-                            console.log(response.data);
                             $('#fieldModal').modal('hide');
                         }
                     },
@@ -148,7 +141,6 @@
                 .then(
                     function(response){
                         if(response){
-                            console.log(response.data);
                             $scope.fields = response.data;
                         }
                     },

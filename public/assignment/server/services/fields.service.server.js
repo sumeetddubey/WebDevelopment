@@ -10,19 +10,11 @@ module.exports = function (app, fieldModel) {
     app.put('/api/assignment/form/:formId/field/:fieldId', updateFormField);
     app.put('/api/assignment/form/:formId/field', reorderFields);
 
-    //function getFormFields(req, res) {
-    //    var formId = req.params.formId;
-    //    console.log("the form id is " +formId);
-    //    res.json(fieldModel.getAllFormFields(formId));
-    //}
-
     function getFormFields(req, res){
         var formId = req.params.formId;
-        console.log(formId);
         fieldModel.getAllFormFields(formId)
             .then(
                 function(doc){
-                    console.log("reply in allformfields is " +doc);
                     res.json(doc);
                 },
                 function(err){
@@ -30,12 +22,6 @@ module.exports = function (app, fieldModel) {
                 }
             )
     }
-
-    //function getFieldById(req, res) {
-    //    var formId = req.params.formId;
-    //    var fieldId = req.params.fieldId;
-    //    res.json(fieldModel.getFormFieldById(formId, fieldId));
-    //}
 
     function getFieldById(req, res){
         var formId = req.params.formId;
@@ -51,12 +37,6 @@ module.exports = function (app, fieldModel) {
             )
     }
 
-    //function deleteFormField(req, res) {
-    //    var formId = req.params.formId;
-    //    var fieldId = req.params.fieldId;
-    //    res.json(fieldModel.deleteFieldById(formId, fieldId));
-    //}
-
     function deleteFormField(req, res){
         var formId = req.params.formId;
         var fieldId = req.params.fieldId;
@@ -70,12 +50,6 @@ module.exports = function (app, fieldModel) {
                 }
             )
     }
-
-    //function createFormField(req, res) {
-    //    var formId = req.params.formId;
-    //    var field = req.body;
-    //    res.json(fieldModel.createField(formId, field));
-    //}
 
     function createFormField(req, res){
         var formId = req.params.formId;
@@ -91,13 +65,6 @@ module.exports = function (app, fieldModel) {
             )
     }
 
-    //function updateFormField(req, res) {
-    //    var formId = req.params.formId;
-    //    var fieldId = req.params.fieldId;
-    //    var field = req.body;
-    //    res.json(fieldModel.updateField(formId, fieldId, field));
-    //}
-
     function updateFormField(req, res){
         var formId = req.params.formId;
         var fieldId = req.params.fieldId;
@@ -112,12 +79,6 @@ module.exports = function (app, fieldModel) {
                 }
             )
     }
-
-    //function reorderFields(req, res) {
-    //    var formId = req.params.formId;
-    //    var fields = req.body;
-    //    res.json(fieldModel.reorderFormFields(formId, fields));
-    //}
 
     function reorderFields(req, res){
         var formId = req.params.formId;

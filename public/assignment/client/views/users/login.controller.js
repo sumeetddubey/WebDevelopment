@@ -19,31 +19,11 @@
                         console.log(response.data);
                         $location.url("/profile");
                     }
+                    else {
+                        $window.alert("Invalid credentials");
+                        $location.url("/login");
+                    }
                 })
         }
-
-        //function login(user){
-        //    function render(response){
-        //        if(response){
-        //            console.log(response);
-        //            $rootScope.currentUser = response;
-        //            console.log($rootScope.currentUser);
-        //            $location.url("/profile");
-        //        }
-        //        else{
-        //            console.log("No response");
-        //            $window.alert("Invalid credentials");
-        //            $location.url("/login");
-        //        }
-        //    };
-        //    console.log(user);
-        //    if (user) {
-        //        UserService.findUserByCredentials(user.username, user.password, render);
-        //    }
-        //    else{
-        //        $window.alert("Invalid credentials");
-        //        $location.url("/login");
-        //    }
-        //}
     }
 })();

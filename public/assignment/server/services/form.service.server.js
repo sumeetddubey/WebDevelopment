@@ -12,19 +12,9 @@ module.exports = function(app, formModel){
         var userId = req.params.userId;
         var form = req.body;
         var formArray;
-        console.log("user id is" +userId);
         formArray = formModel.createForm(userId, form);
         res.json(formArray);
     }
-
-    //function getFormsByUserID(req, res){
-    //    console.log("in forms function ");
-    //    var userId = parseInt(req.params.userId);
-    //    var forms = [];
-    //    forms = formModel.findFormsByUserId(userId);
-    //    res.json(forms);
-    //    console.log(forms);
-    //}
 
     function getFormsByUserID(req, res){
         var userId = req.params.userId;
@@ -41,14 +31,6 @@ module.exports = function(app, formModel){
             )
     }
 
-    //function findFormById(req, res){
-    //    var formId = req.params.formId;
-    //    var form = null;
-    //
-    //    form = formModel.findFormById(formId);
-    //    res.json(form);
-    //}
-
     function findFormById(req, res){
         var formId = req.params.formId;
         formModel.findFormById(formId)
@@ -63,14 +45,6 @@ module.exports = function(app, formModel){
             )
     }
 
-    //function updateFormById(req, res){
-    //    var formId = req.params.formId;
-    //    var form = req.body;
-    //
-    //    var newForm = formModel.updateFormById(formId, form);
-    //    res.json(newForm);
-    //}
-
     function updateFormById(req, res){
         var formId = req.params.formId;
         var form = req.body;
@@ -84,19 +58,6 @@ module.exports = function(app, formModel){
                 }
             )
     }
-
-    //function deleteFormById(req, res){
-    //    var formId = req.params.formId;
-    //    res.json(formModel.deleteFormById(formId));
-    //        //.then(
-    //        //    function(doc){
-    //        //        res.json(doc);
-    //        //    },
-    //        //    function(err){
-    //        //        res.status(400).send(err);
-    //        //    }
-    //        //)
-    //}
 
     function deleteFormById(req, res){
         var formId = req.params.formId;

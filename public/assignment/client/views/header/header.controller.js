@@ -10,7 +10,6 @@
         $scope.logout = logout;
 
         function logout(){
-            console.log("in logout");
             $rootScope.currentUser = null;
             $location.url("/home");
         }

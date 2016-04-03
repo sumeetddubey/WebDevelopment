@@ -6,7 +6,6 @@
     app.controller("HomeController", HomeController);
 
     function HomeController($scope, $location){
-        console.log("in home");
         $scope.$location = $location;
     }
 })();

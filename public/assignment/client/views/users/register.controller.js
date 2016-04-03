@@ -9,11 +9,6 @@
         $scope.register = register;
 
         function register(user){
-            //function render(response){
-            //    $rootScope.currentUser = response;
-            //    $location.url("/profile");
-            //}
-
             if (user == null) {
                 $window.alert("Please fill in the required fields");
                 return;
@@ -41,7 +36,6 @@
                         if(response.data){
                             $rootScope.currentUser = response.data;
                             $location.url('/profile');
-                            console.log(response.data);
                         }
                     }
                 );

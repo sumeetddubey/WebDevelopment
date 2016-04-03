@@ -35,22 +35,9 @@
                         if(response.data){
                             $rootScope.currentUser = response.data;
                             $scope.user = response.data;
-                            console.log(response.data);
                         }
                     }
                 )
         }
-
-        //function update(user) {
-        //    function render(response) {
-        //        console.log(response);
-        //        $location.url("/profile");
-        //    }
-        //
-        //    currUser = $rootScope.currentUser;
-        //    UserService.updateUser(currUser._id, $scope.user, render);
-        //
-        //
-        //}
     }
 })();

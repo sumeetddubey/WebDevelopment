@@ -9,7 +9,7 @@
                 templateUrl: "views/forms/field.view.html",
                 controller: "FormFieldsController"
             })
-    })
+    });
     app.controller("FormController", FormController);
 
     function FormController($scope, FormService, $rootScope, $location, $route){
@@ -23,20 +23,7 @@
         var userForms=[];
         var currUser;
         currUser = $rootScope.currentUser;
-        console.log(currUser);
 
-        //function render(response){
-        //    if(response) {
-        //        console.log(response);
-        //        $scope.form = response;
-        //        userForms.push(response);
-        //        $rootScope.userForms = userForms;
-        //    }
-        //    else{
-        //        userForms=[];
-        //        $rootScope.userForms = userForms;
-        //    }
-        //}
         if(currUser) {
             findAllForms();
         }
@@ -49,7 +36,6 @@
                 .then(
                     function(response){
                         if(response) {
-                            console.log(response.data);
                             $scope.form = response.data;
                             userForms = response.data;
                             $rootScope.userForms = userForms;
@@ -62,9 +48,6 @@
                 )
         }
         function addForm(newForm){
-            console.log(newForm);
-            console.log($rootScope.currentUser);
-
             if(currUser && (newForm)) {
                 FormService.createFormForUser(currUser._id, newForm)
                     .then(
@@ -82,7 +65,6 @@
         function updateForm(form){
             if(form) {
                 var id = $scope.selectedForm._id;
-                console.log($scope.selectedForm);
                 FormService.updateFormById(id, $scope.selectedForm)
                     .then(
                         function(response){
@@ -95,21 +77,15 @@
         }
 
         function deleteForm(form){
-            console.log(form);
             FormService.deleteFormById(form._id)
                 .then(
                     function(response){
-                        console.log('in response');
                         findAllForms();
-                    },
-                    function(err){
-                        console.log(err);
                     }
                 )
         }
 
         function selectForm(form){
-            console.log(form);
             $scope.selectedForm = {
                 "_id": form._id,
                 "title": form.title,
