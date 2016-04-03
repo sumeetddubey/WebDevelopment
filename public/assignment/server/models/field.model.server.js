@@ -18,7 +18,7 @@ module.exports = function(){
         deleteFieldById: deleteFieldById,
         createField: createField,
         updateField: updateField,
-        //reorderFormFields: reorderFormFields
+        reorderFormFields: reorderFormFields
     };
 
 
@@ -94,18 +94,27 @@ module.exports = function(){
     function deleteFieldById(formId, fieldId){
         var deferred = q.defer();
 
-        FormModel.find({_id: formId}, function(err, doc){
+        FormModel.findById(formId, function(err, doc){
             if(err){
                 deferred.reject(err);
                 console.log(err);
             }
             else{
-                var fields = doc[0].fields;
-                for(var index in fields){
-                    if(fields[index]._id === fieldId){
-                        fields.splice(index, 1);
+                //var fields = doc.fields;
+                for(var index in doc.fields){
+                    if(JSON.stringify(doc.fields[index]._id) === JSON.stringify(fieldId)){
+                        doc.fields.splice(index, 1);
                     }
                 }
+                doc.save(function (err, doc){
+                    if(err){
+                        deferred.reject(err);
+                    }
+                    else{
+                        deferred.resolve(doc.fields);
+                        console.log(doc);
+                    }
+                })
             }
         });
         return deferred.promise;
@@ -138,7 +147,6 @@ module.exports = function(){
             }
             else{
                 var field = new FieldModel(newField);
-                field._id = uuid.v1();
                 console.log("THIS IS THE FIELD");
                 console.log(field);
                 doc.fields.push(field);
@@ -185,6 +193,7 @@ module.exports = function(){
 
     function updateField(formId, fieldId, field){
         var deferred = q.defer();
+
         console.log(field);
         FormModel.findById(formId, function(err, doc){
             if(err){
@@ -196,7 +205,12 @@ module.exports = function(){
                 console.log(fieldId);
                 console.log(doc);
                 for(var fieldIndex in doc.fields){
-                    if(doc.fields[fieldIndex]._id === fieldId){
+                    console.log("inside for loop");
+                    var type = typeof fieldId;
+                    console.log(fieldId +type);
+                    type = typeof doc.fields[fieldIndex]._id;
+                    console.log(doc.fields[fieldIndex]._id +type);
+                    if(JSON.stringify(doc.fields[fieldIndex]._id) === JSON.stringify(fieldId)){
                         console.log("got a match");
                         if(field.placeholder){
                             doc.fields[fieldIndex].placeholder = field.placeholder;
@@ -221,9 +235,14 @@ module.exports = function(){
                             doc.fields[fieldIndex].options = newOptions;
                         }
                         doc.save(function (err, doc){
-                            deferred.resolve(doc.fields);
-                            console.log("update return is ");
-                            console.log(fields);
+                            if(err){
+                                console.log(err);
+                            }
+                            else {
+                                deferred.resolve(doc.fields);
+                                console.log("update return is ");
+                                console.log(doc.fields);
+                            }
                         })
                     }
                 }
@@ -232,6 +251,27 @@ module.exports = function(){
         return deferred.promise;
     }
 
+    function reorderFormFields(formId, ipFields){
+      var deferred = q.defer();
+      FormModel.findById(formId, function(err, doc){
+          if(err){
+              deferred.reject(err);
+          }
+          else{
+              console.log(ipFields);
+              doc.fields = ipFields;
+              doc.save(function (err, doc){
+                  if(err){
+                      deferred.reject(err);
+                  }
+                  else{
+                      deferred.resolve(doc.fields);
+                  }
+              })
+          }
+      });
+        return deferred.promise;
+    }
     //function reorderFormFields(formId, ipFields) {
     //    var form = findFormById(formId);
     //    console.log(" in reorder");

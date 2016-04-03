@@ -197,7 +197,9 @@ module.exports = function(){
                 deferred.reject(err);
                 console.log(err);
             }
-            else{}
+            else{
+                deferred.resolve(doc);
+            }
         });
         return deferred.promise;
     }
