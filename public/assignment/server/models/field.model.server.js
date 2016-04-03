@@ -65,7 +65,6 @@ module.exports = function(){
                 deferred.reject(err);
             }
             else{
-                //var fields = doc.fields;
                 for(var index in doc.fields){
                     if(JSON.stringify(doc.fields[index]._id) === JSON.stringify(fieldId)){
                         doc.fields.splice(index, 1);
@@ -111,12 +110,8 @@ module.exports = function(){
                 deferred.reject(err);
             }
             else{
-                console.log("THIS IS DOC");
-                console.log(fieldId);
-                console.log(doc);
                 for(var fieldIndex in doc.fields){
                     if(JSON.stringify(doc.fields[fieldIndex]._id) === JSON.stringify(fieldId)){
-                        console.log("got a match");
                         if(field.placeholder){
                             doc.fields[fieldIndex].placeholder = field.placeholder;
                         }
