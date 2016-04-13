@@ -15,8 +15,10 @@
                 <li ng-hide="currentUser"><a href="#/login">Login</a></li>
                 <li ng-hide="!currentUser"><a href="#/profile">{{currentUser.username}}</a></li>
                 <li ng-show="currentUser.roles.indexOf('admin') > -1"><a href="#/admin">admin</a></li>
+                <li class="hidden-lg hidden-md" ng-show="currentUser"><a href="#/forms">Forms</a></li>
                 <li ng-click="logout()" ng-hide="!currentUser"><a>Logout</a></li>
             </ul>
+
             <!--<form class="navbar-form navbar-right">-->
                 <!--<input type="text" class="form-control" placeholder="Search...">-->
             <!--</form>-->
