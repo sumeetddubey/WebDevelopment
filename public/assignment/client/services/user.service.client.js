@@ -8,6 +8,9 @@
     function UserService($http){
         var api = {
             //method declarations
+            login: login,
+            logout: logout,
+            register: register,
             findUserByUsername: findUserByUsername,
             findUserByCredentials: findUserByCredentials,
             findAllUsers: findAllUsers,
@@ -16,6 +19,18 @@
             updateUserById: updateUserById
         };
         return api;
+
+        function login(user){
+            return $http.post('/api/assignment/login', user);
+        }
+
+        function logout(){
+            return $http.post('/api/assignment/logout');
+        }
+
+        function register(user){
+            return $http.post('/api/assignment/register', user);
+        }
 
         function findUserByUsername(username){
             return $http.get("/api/assignment/user?username="+username);

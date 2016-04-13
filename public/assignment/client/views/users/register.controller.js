@@ -30,13 +30,16 @@
                 return;
             }
 
-            UserService.createUser($scope.user)
+            UserService.register($scope.user)
                 .then(
                     function(response){
                         if(response.data){
                             $rootScope.currentUser = response.data;
                             $location.url('/profile');
                         }
+                    },
+                    function(err){
+                        $scope.err = err;
                     }
                 );
         }

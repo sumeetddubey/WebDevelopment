@@ -4,9 +4,6 @@
 
 module.exports = function(){
 
-    //user schema
-    //var UserSchema = require("./user.schema.client.js")
-
     var mock = require("./user.mock.json");
     var mongoose = require('mongoose');
     var q = require ('q');

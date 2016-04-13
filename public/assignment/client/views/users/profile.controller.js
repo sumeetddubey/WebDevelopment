@@ -36,8 +36,11 @@
                             $rootScope.currentUser = response.data;
                             $scope.user = response.data;
                         }
+                    },
+                    function(err){
+                        $scope.err = err;
                     }
-                )
+                );
         }
     }
 })();

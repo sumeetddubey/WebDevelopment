@@ -1,5 +1,8 @@
 var express = require('express');
 var cors = require('cors');
+var passport = require('passport');
+var cookieParser = require('cookie-parser');
+var session = require('express-session');
 
 //loading mongoose
 var mongoose = require('mongoose');
@@ -13,6 +16,16 @@ var port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
 var bodyParser    = require('body-parser');
 var multer        = require('multer');
 
+//passpoer session
+app.use(session({
+    secret: 'this is the secret',
+    resave: true,
+    saveUninitialized: true
+}));
+
+app.use(cookieParser());
+app.use(passport.initialize());
+app.use(passport.session());
 //app.use(express.bodyParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

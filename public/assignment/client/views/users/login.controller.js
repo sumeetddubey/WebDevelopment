@@ -12,17 +12,17 @@
             if (!user) {
                 return;
             }
-            UserService.findUserByCredentials(user.username, user.password)
+            UserService.login(user)
                 .then(function(response){
                     if(response.data){
                         $rootScope.currentUser = response.data;
                         $location.url("/profile");
                     }
-                    else {
-                        $window.alert("Invalid credentials");
-                        $location.url("/login");
+                },
+                    function(err){
+                        $scope.err = err;
                     }
-                })
+                );
         }
     }
 })();
