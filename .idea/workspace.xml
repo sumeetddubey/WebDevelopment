@@ -2,6 +2,360 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="424e18aa-904f-46a3-b711-682f3306b5da" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/oh-my-glob.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/content-type/HISTORY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/content-type/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/content-type/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/content-type/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/content-type/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/HISTORY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/node_modules/cookie-signature/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/node_modules/cookie-signature/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/node_modules/cookie-signature/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/node_modules/cookie-signature/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/node_modules/cookie-signature/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/node_modules/cookie/HISTORY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/node_modules/cookie/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/node_modules/cookie/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/node_modules/cookie/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/node_modules/cookie/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/depd/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/depd/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/depd/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/depd/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/depd/lib/browser/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/depd/lib/compat/buffer-concat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/depd/lib/compat/callsite-tostring.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/depd/lib/compat/event-listener-count.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/depd/lib/compat/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/depd/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ee-first/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ee-first/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ee-first/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/ee-first/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/HISTORY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/cookie-signature/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/cookie-signature/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/cookie-signature/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/cookie-signature/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/cookie-signature/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/cookie/HISTORY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/cookie/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/cookie/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/cookie/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/cookie/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/crc/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/crc/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/crc/lib/crc1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/crc/lib/crc16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/crc/lib/crc16_ccitt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/crc/lib/crc16_kermit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/crc/lib/crc16_modbus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/crc/lib/crc16_xmodem.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/crc/lib/crc24.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/crc/lib/crc32.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/crc/lib/crc8.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/crc/lib/crc8_1wire.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/crc/lib/define_crc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/crc/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/crc/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/debug/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/debug/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/debug/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/debug/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/debug/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/debug/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/debug/browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/debug/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/debug/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/debug/node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/debug/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/depd/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/depd/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/depd/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/depd/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/depd/lib/browser/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/depd/lib/compat/buffer-concat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/depd/lib/compat/callsite-tostring.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/depd/lib/compat/event-listener-count.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/depd/lib/compat/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/depd/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/on-headers/HISTORY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/on-headers/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/on-headers/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/on-headers/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/on-headers/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/parseurl/HISTORY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/parseurl/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/parseurl/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/parseurl/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/parseurl/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/uid-safe/HISTORY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/uid-safe/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/uid-safe/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/uid-safe/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/uid-safe/node_modules/base64-url/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/uid-safe/node_modules/base64-url/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/uid-safe/node_modules/base64-url/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/uid-safe/node_modules/base64-url/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/uid-safe/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/utils-merge/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/utils-merge/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/utils-merge/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/utils-merge/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/node_modules/utils-merge/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/session/cookie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/session/memory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/session/session.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/express-session/session/store.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/http-errors/HISTORY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/http-errors/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/http-errors/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/http-errors/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/http-errors/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/Changelog.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/dbcs-codec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/dbcs-data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/internal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/sbcs-codec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/sbcs-data-generated.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/sbcs-data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/tables/big5-added.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/tables/cp936.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/tables/cp949.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/tables/cp950.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/tables/eucjp.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/tables/gbk-added.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/tables/shiftjis.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/utf16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/utf7.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/lib/bom-handling.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/lib/extend-node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/lib/streams.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/media-typer/HISTORY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/media-typer/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/media-typer/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/media-typer/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/media-typer/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mime-db/HISTORY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mime-db/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mime-db/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mime-db/db.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mime-db/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mime-db/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mime-types/HISTORY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mime-types/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mime-types/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mime-types/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mime-types/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/on-finished/HISTORY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/on-finished/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/on-finished/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/on-finished/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/on-finished/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/lib/strategy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/lib/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/lib/strategy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/node_modules/passport-strategy/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport-local/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/authenticator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/errors/authenticationerror.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/framework/connect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/http/request.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/middleware/authenticate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/middleware/initialize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/lib/strategies/session.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/lib/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/lib/strategy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/passport-strategy/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/passport/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/.settings/.jsdtscope" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/.settings/org.eclipse.wst.jsdt.ui.superType.container" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/.settings/org.eclipse.wst.jsdt.ui.superType.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/lib/session/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/lib/session/session.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/lib/session/storage/base.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/lib/session/storage/memcached.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/lib/session/storage/memory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/.bin/vows" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/bin/vows" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/assert/error.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/assert/macros.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/assert/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/utils/nopstream.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows/console.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows/context.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows/coverage/file.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows/coverage/fragments/coverage-foot.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows/coverage/fragments/coverage-head.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows/coverage/report-html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows/coverage/report-json.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows/coverage/report-plain.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows/coverage/report-xml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows/extras.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows/reporters/dot-matrix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows/reporters/json.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows/reporters/silent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows/reporters/spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows/reporters/tap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows/reporters/watch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows/reporters/xunit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/lib/vows/suite.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/diff/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/diff/diff.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/diff/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/eyes/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/eyes/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/eyes/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/eyes/lib/eyes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/eyes/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/eyes/test/eyes-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/examples/g.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/examples/usr-local.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/glob.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/graceful-fs/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/graceful-fs/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/graceful-fs/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/graceful-fs/fs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/graceful-fs/graceful-fs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/graceful-fs/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/graceful-fs/polyfills.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/graceful-fs/test/max-open.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/graceful-fs/test/open.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/graceful-fs/test/readdir-sort.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/graceful-fs/test/write-then-read.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/minimatch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/CONTRIBUTORS" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/lib/lru-cache.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/test/basic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/test/foreach.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/test/memory-leak.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/test/serialize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/node_modules/sigmund/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/node_modules/sigmund/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/node_modules/sigmund/bench.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/node_modules/sigmund/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/node_modules/sigmund/sigmund.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/node_modules/sigmund/test/basic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/test/basic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/test/brace-expand.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/test/caching.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/test/defaults.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/minimatch/test/extglob-ending-with-state-char.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/once/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/once/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/once/node_modules/wrappy/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/once/node_modules/wrappy/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/once/node_modules/wrappy/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/once/node_modules/wrappy/test/basic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/once/node_modules/wrappy/wrappy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/once/once.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/node_modules/once/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/test/00-setup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/test/bash-comparison.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/test/bash-results.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/test/cwd-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/test/empty-set.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/test/error-callback.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/test/globstar-match.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/test/mark.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/test/negation-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/test/new-glob-optional-options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/test/nocase-nomagic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/test/pause-resume.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/test/readme-issue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/test/root-nomount.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/test/root.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/test/stat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/node_modules/glob/test/zz-cleanup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/test/VowsCamelCaseTest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/test/assert-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/test/c-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/test/experimental/gh-325.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/test/fixtures/isolate/failing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/test/fixtures/isolate/log.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/test/fixtures/isolate/passing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/test/fixtures/isolate/stderr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/test/fixtures/supress-stdout/output.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/test/isolate-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/test/reporters/reporters-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/test/supress-stdout-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/test/vows-error-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/test/vows-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/node_modules/vows/test/vows_underscore_test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/test/session/session.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/session/test/session/storage/base.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/statuses/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/statuses/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/statuses/codes.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/statuses/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/statuses/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/type-is/HISTORY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/type-is/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/type-is/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/type-is/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/type-is/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/unpipe/HISTORY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/unpipe/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/unpipe/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/unpipe/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/unpipe/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="06abd0ce-0886-4719-a12a-8c7e777881a1" name="Failed commit: Default" comment="changed sortable function" />
@@ -104,20 +458,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66964287">
+            <state vertical-scroll-proportion="0.0">
               <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="1.2712264">
               <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
@@ -840,7 +1194,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460532467471</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="reinstalled body-parser">
+      <created>1460661727362</created>
+      <option name="number" value="00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1460661727362</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView">
@@ -858,13 +1218,13 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2538071" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32452276" sideWeight="0.50543875" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3010279" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31571218" sideWeight="0.49456128" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -887,7 +1247,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added routing, controllers and config.js" />
     <MESSAGE value="all pages to angular except formfields" />
     <MESSAGE value="login and forms working" />
     <MESSAGE value="angular implementation complete" />
@@ -912,7 +1271,8 @@
     <MESSAGE value="minor changes" />
     <MESSAGE value="passportJs implementation" />
     <MESSAGE value="added form link in header" />
-    <option name="LAST_COMMIT_MESSAGE" value="added form link in header" />
+    <MESSAGE value="reinstalled body-parser" />
+    <option name="LAST_COMMIT_MESSAGE" value="reinstalled body-parser" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1240,14 +1600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assignment/client/views/users/login.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1290,8 +1642,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66964287">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2712264">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
