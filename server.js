@@ -6,7 +6,7 @@ var session = require('express-session');
 
 //loading mongoose
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/webdev');
+//mongoose.connect('mongodb://localhost/webdev');
 
 console.log(mongoose);
 
@@ -16,12 +16,25 @@ var port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
 var bodyParser    = require('body-parser');
 var multer        = require('multer');
 
-//passpoer session
+
+var connectionString = process.env.OPENSHIFT_MONGO_DB_URL || 'mongodb://localhost/webdev';
+
+if(process.env.OPENSHIFT_MONGODB_DB_PASSWORD) {
+    connectionString = process.env.OPENSHIFT_MONGODB_DB_USERNAME + ":" +
+        process.env.OPENSHIFT_MONGODB_DB_PASSWORD + "@" +
+        process.env.OPENSHIFT_MONGODB_DB_HOST + ':' +
+        process.env.OPENSHIFT_MONGODB_DB_PORT + '/' +
+        process.env.OPENSHIFT_APP_NAME;
+}
+
+//passport session
 app.use(session({
     secret: 'this is the secret',
     resave: true,
     saveUninitialized: true
 }));
+
+mongoose.connect(connectionString);
 
 app.use(cookieParser());
 app.use(passport.initialize());
