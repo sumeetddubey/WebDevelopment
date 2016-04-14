@@ -17,15 +17,15 @@ var bodyParser    = require('body-parser');
 var multer        = require('multer');
 
 
-var connectionString = process.env.OPENSHIFT_MONGODB_DB_URL || 'mongodb://localhost/webdev';
+var connectionString = process.env.OPENSHIFT_MONGODB_DB_URL || 'mongodb://localhost:27017/webdev';
 
-if(process.env.OPENSHIFT_MONGODB_DB_PASSWORD) {
-    connectionString = process.env.OPENSHIFT_MONGODB_DB_USERNAME + ":" +
-        process.env.OPENSHIFT_MONGODB_DB_PASSWORD + "@" +
-        process.env.OPENSHIFT_MONGODB_DB_HOST + ':' +
-        process.env.OPENSHIFT_MONGODB_DB_PORT + '/' +
-        process.env.OPENSHIFT_APP_NAME;
-}
+//if(process.env.OPENSHIFT_MONGODB_DB_PASSWORD) {
+//    connectionString = process.env.OPENSHIFT_MONGODB_DB_USERNAME + ":" +
+//        process.env.OPENSHIFT_MONGODB_DB_PASSWORD + "@" +
+//        process.env.OPENSHIFT_MONGODB_DB_HOST + ':' +
+//        process.env.OPENSHIFT_MONGODB_DB_PORT + '/' +
+//        process.env.OPENSHIFT_APP_NAME;
+//}
 
 //passport session
 app.use(session({

@@ -132,8 +132,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.69866073">
-              <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.73660713">
+              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -595,12 +595,6 @@
       <option name="number" value="Default" />
       <updated>1452808221444</updated>
     </task>
-    <task id="LOCAL-00003" summary="created register login and profile pages">
-      <created>1453882640326</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1453882640326</updated>
-    </task>
     <task id="LOCAL-00004" summary="created admin page">
       <created>1454464765836</created>
       <option name="number" value="00004" />
@@ -889,7 +883,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460665177524</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="openshift mongo connection">
+      <created>1460665493318</created>
+      <option name="number" value="00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1460665493318</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1340,8 +1340,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69866073">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.73660713">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
           <folding />
         </state>
       </provider>
