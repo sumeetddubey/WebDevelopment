@@ -27,12 +27,12 @@ module.exports = function(){
     function getAllFormFields(formId){
         var deferred = q.defer();
 
-        FormModel.find({_id: formId}, function(err, doc){
+        FormModel.findOne({_id: formId}, function(err, doc){
             if(err){
                 deferred.reject(err);
             }
             else{
-                deferred.resolve(doc[0].fields);
+                deferred.resolve(doc.fields);
             }
         });
         return deferred.promise;
