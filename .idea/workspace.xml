@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="424e18aa-904f-46a3-b711-682f3306b5da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <list id="06abd0ce-0886-4719-a12a-8c7e777881a1" name="Failed commit: Default" comment="changed sortable function" />
     <list id="b185ab70-3ad7-408e-b4f2-226000a32183" name="Failed commit: Default (2)" comment="dependencies">
@@ -131,8 +132,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72098213">
-              <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.69866073">
+              <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -594,12 +595,6 @@
       <option name="number" value="Default" />
       <updated>1452808221444</updated>
     </task>
-    <task id="LOCAL-00002" summary="started working on home page">
-      <created>1453697114775</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1453697114775</updated>
-    </task>
     <task id="LOCAL-00003" summary="created register login and profile pages">
       <created>1453882640326</created>
       <option name="number" value="00003" />
@@ -888,7 +883,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460665172010</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="openshift mongo connection">
+      <created>1460665177523</created>
+      <option name="number" value="00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1460665177524</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1339,8 +1340,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72098213">
-          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.69866073">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
           <folding />
         </state>
       </provider>

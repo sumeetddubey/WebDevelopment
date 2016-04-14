@@ -17,7 +17,7 @@ var bodyParser    = require('body-parser');
 var multer        = require('multer');
 
 
-var connectionString = process.env.OPENSHIFT_MONGO_DB_URL || 'mongodb://localhost/webdev';
+var connectionString = process.env.OPENSHIFT_MONGODB_DB_URL || 'mongodb://localhost/webdev';
 
 if(process.env.OPENSHIFT_MONGODB_DB_PASSWORD) {
     connectionString = process.env.OPENSHIFT_MONGODB_DB_USERNAME + ":" +
