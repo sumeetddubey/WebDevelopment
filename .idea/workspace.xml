@@ -457,12 +457,6 @@
       <option name="number" value="Default" />
       <updated>1452808221444</updated>
     </task>
-    <task id="LOCAL-00010" summary="added some css for homepage">
-      <created>1455320093640</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1455320093640</updated>
-    </task>
     <task id="LOCAL-00011" summary="working on index page - angular">
       <created>1455573829459</created>
       <option name="number" value="00011" />
@@ -751,7 +745,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460689883455</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="minor home page fix">
+      <created>1460694480619</created>
+      <option name="number" value="00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1460694480622</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TodoView">
@@ -799,7 +799,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <confirmMoveToFailedCommit value="2" />
-    <MESSAGE value="assignment 2 final" />
     <MESSAGE value="minor change" />
     <MESSAGE value="pushing to main repo" />
     <MESSAGE value="pushing project to main repo" />
@@ -824,7 +823,8 @@
     <MESSAGE value="added some node modules" />
     <MESSAGE value="dependencies" />
     <MESSAGE value="openshift mongo connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="openshift mongo connection" />
+    <MESSAGE value="minor home page fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor home page fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

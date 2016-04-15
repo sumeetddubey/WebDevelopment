@@ -5,7 +5,7 @@
   {"formId": "57003bed756fedfc43acf831", "label": "State", "type": "OPTIONS", "options": [
     {"label": "Massachusetts", "value": "MA"},
     {"label": "New Hampshire", "value": "NH"}
-  ]},
+]},
   {"formId": "57003bed756fedfc43acf831", "label": "ZIP", "type": "TEXT", "placeholder": "ZIP"},
   {"formId": "57003bed756fedfc43acf831", "label": "Email", "type": "EMAIL", "placeholder": "Email"},
   {"formId": "57003bed756fedfc43acf832", "label": "Title", "type": "TEXT", "placeholder": "Title"},

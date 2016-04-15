@@ -28,12 +28,10 @@ if(process.env.OPENSHIFT_MONGODB_DB_PASSWORD) {
 }
 
 //passport session
-var secretString = process.env.SESSION_SECRET;
-//var secretString = getenv('SESSION_SECRET');
-console.log(secretString);
+var secretString = process.env.SESSION_SECRET || 'secret';
 
 app.use(session({
-    secret: 'secret',
+    secret: secretString,
     resave: true,
     saveUninitialized: true
 }));
