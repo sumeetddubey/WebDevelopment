@@ -32,6 +32,8 @@ module.exports = function(){
                 deferred.reject(err);
             }
             else{
+                console.log(formId);
+                console.log(doc);
                 deferred.resolve(doc.fields);
             }
         });
