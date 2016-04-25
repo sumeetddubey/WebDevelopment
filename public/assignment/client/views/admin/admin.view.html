@@ -6,63 +6,51 @@
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th><a href="#" class="glyphicon glyphicon-triangle-bottom sortIcon"></a>Username</th>
-                    <th><a href="#" class="glyphicon glyphicon-triangle-bottom sortIcon"></a>Password</th>
-                    <th><a href="#" class="glyphicon glyphicon-triangle-bottom sortIcon"></a>Role</th>
-                    <th><a href="#" class="glyphicon glyphicon-triangle-bottom sortIcon">Action</th>
-                    <th>&nbsp;</th>
+                    <th ng-click="sort('username')"><a class="glyphicon glyphicon-chevron-down" ng-show="attribute == 'username' && reverse==false"></a><span class="glyphicon glyphicon-chevron-up" ng-show="attribute == 'username' && reverse"></span>Username</th>
+                    <th ng-click="sort('password')"><a class="glyphicon glyphicon-chevron-down" ng-show="attribute == 'password' && reverse==false"></a><span class="glyphicon glyphicon-chevron-up" ng-show="attribute == 'password' && reverse"></span>Password</th>
+                    <th ng-click="sort('firstName')"><a class="glyphicon glyphicon-chevron-down" ng-show="attribute == 'firstName' && reverse==false"></a><span class="glyphicon glyphicon-chevron-up" ng-show="attribute == 'firstName' && reverse"></span>First Name</th>
+                    <th ng-click="sort('lastName')"><a class="glyphicon glyphicon-chevron-down" ng-show="attribute == 'lastName' && reverse==false"></a><span class="glyphicon glyphicon-chevron-up" ng-show="attribute == 'lastName' && reverse"></span>Last Name</th>
+                    <th ng-click="sort('roles')"><a class="glyphicon glyphicon-chevron-down" ng-show="attribute == 'roles' && reverse==false"></a><span class="glyphicon glyphicon-chevron-up" ng-show="attribute == 'roles' && reverse"></span>Roles</th>
                 </tr>
                 <tr>
-                    <td><input class="form-control" type="text" name="username" placeholder="Username"/></td>
-                    <td><input class="form-control" type="password" name="password" placeholder="Password"/></td>
-                    <td><input class="form-control" type="text" name="roles" style="text-align: center" placeholder="role1, role2"/></td>
+                    <td><input class="form-control" type="text" ng-model="selectedUser.username" placeholder="Username"/></td>
+                    <td><input class="form-control" type="password" ng-model="selectedUser.password" placeholder="Password"/></td>
+                    <td><input class="form-control" type="text" ng-model="selectedUser.firstName" placeholder="First Name"/></td>
+                    <td><input class="form-control" type="text" ng-model="selectedUser.lastName" placeholder="Last Name"/></td>
+                    <td><input class="form-control" type="text" ng-model="selectedUser.roles" placeholder="role1, role2"/></td>
                     <td style="white-space: nowrap">
-                        <a href="#" class="btn btn-success">
-                            <scan class="glyphicon glyphicon-ok"></scan>
-                        </a>
-                        <a href="#" class="btn btn-primary">
+                        <a ng-click="addUser(selectedUser)" class="btn btn-success">
                             <scan class="glyphicon glyphicon-plus"></scan>
+                        </a>
+                        <a ng-click="updateUser(selectedUser)" class="btn btn-warning">
+                            <scan class="glyphicon glyphicon-ok"></scan>
                         </a>
                     </td>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>Alice</td>
-                    <td></td>
-                    <td style="text-align: center">student</td>
+                <tr ng-repeat="user in allUsers | orderBy:attribute:reverse">
                     <td>
-                        <a href="#" class="btn btn-warning">
-                            <scan class="glyphicon glyphicon-pencil"></scan>
-                        </a>
-                        <a href="#" class="btn btn-danger">
-                            <scan class="glyphicon glyphicon-remove"></scan>
-                        </a>
+                        {{user.username}}
                     </td>
-                </tr>
-                <tr>
-                    <td>Bob</td>
-                    <td></td>
-                    <td style="text-align: center">faculty | admin</td>
                     <td>
-                        <a href="#" class="btn btn-warning">
-                            <scan class="glyphicon glyphicon-pencil"></scan>
-                        </a>
-                        <a href="#" class="btn btn-danger">
-                            <scan class="glyphicon glyphicon-remove"></scan>
-                        </a>
+                        {{user.password}}
                     </td>
-                </tr>
-                <tr>
-                    <td>Charlie</td>
-                    <td></td>
-                    <td style="text-align: center"></td>
                     <td>
-                        <a href="#" class="btn btn-warning">
-                            <scan class="glyphicon glyphicon-pencil"></scan>
-                        </a>
-                        <a href="#" class="btn btn-danger">
+                        {{user.firstName}}
+                    </td>
+                    <td>
+                        {{user.lastName}}
+                    </td>
+                    <td>
+                        {{user.roles}}
+                    </td>
+                    <td>
+                        <a ng-click="deleteUser(user)" class="btn btn-danger">
                             <scan class="glyphicon glyphicon-remove"></scan>
+                        </a>
+                        <a ng-click="selectUser(user)" class="btn btn-primary">
+                            <scan class="glyphicon glyphicon-pencil"></scan>
                         </a>
                     </td>
                 </tr>

@@ -20,7 +20,9 @@ module.exports = function(){
         findUserByUsername: findUserByUsername,
         findUserByCredentials: findUserByCredentials,
         deleteUserById: deleteUserById,
-        updateUserById: updateUserById
+        updateUserById: updateUserById,
+        adminUpdateUserById: adminUpdateUserById,
+        adminDeleteUserById: adminDeleteUserById
     };
 
     return api;
@@ -72,12 +74,15 @@ module.exports = function(){
 
     function findUserByUsername(username){
         var deferred = q.defer();
+        console.log('finding by username');
+        console.log(username);
         UserModel.findOne({username: username}, function(err, doc){
             if(err){
                 deferred.reject(err);
             }
             else{
                 deferred.resolve(doc);
+                console.log("user found "+doc);
             }
         });
         return deferred.promise;
@@ -117,7 +122,8 @@ module.exports = function(){
             password: ipUser.password,
             firstName: ipUser.firstName,
             lastName: ipUser.lastName,
-            emails: [ipUser.emails]}, function(err, doc){
+            emails: [ipUser.emails],
+            phones: [ipUser.phones]}, function(err, doc){
             if(err){
                 deferred.reject(err);
             }
@@ -126,6 +132,41 @@ module.exports = function(){
                 deferred.resolve(user);
             }
         });
+        return deferred.promise;
+    }
+
+    function adminUpdateUserById(userId, ipUser){
+        var deferred = q.defer();
+        UserModel.update({_id: userId},{
+            username: ipUser.username,
+            password: ipUser.password,
+            firstName: ipUser.firstName,
+            lastName: ipUser.lastName,
+            roles: ipUser.roles}, function(err, doc){
+            if(err){
+                deferred.reject(err);
+            }
+            else{
+                var user = findUserById(userId);
+                deferred.resolve(user);
+                console.log("user updated "+doc);
+            }
+        });
+        return deferred.promise;
+    }
+
+    function adminDeleteUserById(userId){
+        var deferred = q.defer();
+        UserModel.remove({_id: userId},function(err, doc){
+            if(err){
+                deferred.reject(err);
+            }
+            else{
+                deferred.resolve(doc);
+                console.log("user deleted "+doc);
+            }
+        });
+
         return deferred.promise;
     }
 
