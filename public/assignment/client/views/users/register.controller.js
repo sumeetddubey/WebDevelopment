@@ -33,10 +33,19 @@
             UserService.register($scope.user)
                 .then(
                     function(response){
+                        console.log(response.data);
                         if(response.data){
-                            console.log(response.data);
-                            UserService.setCurrentUser(response.data);
-                            $location.url('/profile');
+                            UserService.login(user)
+                                .then(function(response){
+                                        if(response.data){
+                                            $rootScope.currentUser = response.data;
+                                            $location.url("/profile");
+                                        }
+                                    },
+                                    function(err){
+                                        $scope.err = err;
+                                    }
+                                );
                         }
                         else{
                             $window.alert('Could not register. This username already exists');

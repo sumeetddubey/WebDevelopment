@@ -25,7 +25,6 @@
                     function(response){
                         if(response){
                             $scope.allUsers = response.data;
-                            console.log(response.data);
                         }
                     },
                     function(err){
@@ -46,7 +45,6 @@
             UserService.adminCreateUser(user)
                 .then(
                     function(response){
-                        console.log(response.data);
                         init();
 
                     },
@@ -60,7 +58,6 @@
         function updateUser(user){
             var userId = user._id;
             user.roles = getRoles(user.roles);
-            console.log(user.roles);
             UserService.adminUpdateUser(userId, user)
                 .then(
                     function(response){
@@ -72,7 +69,6 @@
 
         function deleteUser(user) {
             var userId = user._id;
-            console.log(userId);
             UserService.adminDeleteUser(userId)
                 .then(
                     function (response) {

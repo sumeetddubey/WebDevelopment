@@ -9,6 +9,7 @@ module.exports = function(app, userModel) {
     var auth = authorized;
     passport.use(new LocalStrategy(localStrategy));
 
+    //rest api for users
     app.post('/api/assignment/login', passport.authenticate('local'), login);
     app.post('/api/assignment/logout', logout);
     app.post('/api/assignment/register', register);
@@ -32,22 +33,10 @@ module.exports = function(app, userModel) {
             .findUserByUsername(username)
             .then(
                 function(user){
-                    console.log("FROM USER SERVICE");
-                    console.log(user);
                     if(!user){
-                        console.log("password doesnt match");
                         return done(null, false);
                     }
                     else if(user && bcrypt.compareSync(password, user.password)) {
-                        console.log('user is authorized');
-                        console.log(user.password);
-
-                        console.log("alice " +bcrypt.hashSync('alice'));
-                        console.log("edward " +bcrypt.hashSync('ed'));
-                        console.log("bob " +bcrypt.hashSync('bob'));
-                        console.log("charlie " +bcrypt.hashSync('charlie'));
-
-                        console.log("password wrong");
                         return done(null, user);
                     }
                 },
@@ -97,7 +86,6 @@ module.exports = function(app, userModel) {
         var user = req.body;
         var hash = bcrypt.hashSync(user.password);
         user.password = hash;
-        console.log(user);
 
         userModel
             .findUserByUsername(user.username)
@@ -231,13 +219,11 @@ module.exports = function(app, userModel) {
     }
 
     function updateUser(req, res){
-        console.log('hello');
         var userId = req.params.id;
         var user = req.body;
         var hash = bcrypt.hashSync(user.password);
         user.password = hash;
 
-        console.log(user.password);
         userModel.updateUserById(userId, user)
             .then(
                 function(doc){

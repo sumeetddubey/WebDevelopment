@@ -3,6 +3,7 @@
  */
 module.exports = function (app, fieldModel) {
 
+    //rest api for formfields
     app.get('/api/assignment/form/:formId/field', getFormFields);
     app.get('/api/assignment/form/:formId/field/:fieldId', getFieldById);
     app.delete('/api/assignment/form/:formId/field/:fieldId', deleteFormField);

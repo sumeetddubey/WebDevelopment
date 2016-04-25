@@ -32,7 +32,7 @@ module.exports = function(){
         var user = {
             "username": ipUser.username,
             "password": ipUser.password,
-            "emails": ["ipUser.email"]
+            "emails": [ipUser.email]
         };
         UserModel.create(ipUser, function(err, doc){
             if(err){
@@ -82,7 +82,6 @@ module.exports = function(){
             }
             else{
                 deferred.resolve(doc);
-                console.log("user found "+doc);
             }
         });
         return deferred.promise;
@@ -154,7 +153,6 @@ module.exports = function(){
             else{
                 var user = findUserById(userId);
                 deferred.resolve(user);
-                console.log("user updated "+doc);
             }
         });
         return deferred.promise;
@@ -168,7 +166,6 @@ module.exports = function(){
             }
             else{
                 deferred.resolve(doc);
-                console.log("user deleted "+doc);
             }
         });
 
