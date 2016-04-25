@@ -14,7 +14,6 @@
 
             $scope.user = {
                 "username": user.username,
-                "password": user.password,
                 "firstName": user.firstName,
                 "lastName": user.lastName,
                 "emails": user.emails
@@ -33,8 +32,8 @@
                 .then(
                     function(response){
                         if(response.data){
-                            $rootScope.currentUser = response.data;
-                            $scope.user = response.data;
+                            UserService.setCurrentUser(response.data);
+                            console.log(response.data);
                         }
                     },
                     function(err){

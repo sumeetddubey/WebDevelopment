@@ -128,8 +128,14 @@ module.exports = function(){
                 deferred.reject(err);
             }
             else{
-                var user = findUserById(userId);
-                deferred.resolve(user);
+                UserModel.findById({_id: userId}, function(err, doc){
+                    if(err){
+                        deferred.reject(err);
+                    }
+                    else{
+                        deferred.resolve(doc);
+                    }
+                })
             }
         });
         return deferred.promise;
@@ -139,7 +145,6 @@ module.exports = function(){
         var deferred = q.defer();
         UserModel.update({_id: userId},{
             username: ipUser.username,
-            password: ipUser.password,
             firstName: ipUser.firstName,
             lastName: ipUser.lastName,
             roles: ipUser.roles}, function(err, doc){

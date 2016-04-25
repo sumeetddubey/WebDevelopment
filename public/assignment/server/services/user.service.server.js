@@ -3,6 +3,7 @@
  */
 
 module.exports = function(app, userModel) {
+    var bcrypt = require('bcrypt-nodejs');
     var passport = require('passport');
     var LocalStrategy = require('passport-local').Strategy;
     var auth = authorized;
@@ -12,11 +13,11 @@ module.exports = function(app, userModel) {
     app.post('/api/assignment/logout', logout);
     app.post('/api/assignment/register', register);
     app.get('/api/assignment/loggedIn', loggedIn);
-    app.get('/api/assignment/user', auth, findUser);
-    app.post('/api/assignment/user', auth, createUser);
+    app.get('/api/assignment/user', findUser);
+    app.post('/api/assignment/user', createUser);
     app.get('/api/assignment/user/:id', findUserById);
-    app.put('/api/assignment/user/:id', auth, updateUser);
-    app.delete('/api/assignment/user/:id', auth, deleteUser);
+    app.put('/api/assignment/user/:id', updateUser);
+    app.delete('/api/assignment/user/:id', deleteUser);
     app.get('/api/assignment/users', findAllUsers);
     app.get('/api/assignment/admin/user', adminFindAllUsers);
     app.get('/api/assignment/admin/user/:userId', adminFindUserById);
@@ -28,13 +29,27 @@ module.exports = function(app, userModel) {
 
     function localStrategy(username, password, done){
         userModel
-            .findUserByCredentials({username: username, password: password})
+            .findUserByUsername(username)
             .then(
                 function(user){
+                    console.log("FROM USER SERVICE");
+                    console.log(user);
                     if(!user){
+                        console.log("password doesnt match");
                         return done(null, false);
                     }
-                    return done(null, user);
+                    else if(user && bcrypt.compareSync(password, user.password)) {
+                        console.log('user is authorized');
+                        console.log(user.password);
+
+                        console.log("alice " +bcrypt.hashSync('alice'));
+                        console.log("edward " +bcrypt.hashSync('ed'));
+                        console.log("bob " +bcrypt.hashSync('bob'));
+                        console.log("charlie " +bcrypt.hashSync('charlie'));
+
+                        console.log("password wrong");
+                        return done(null, user);
+                    }
                 },
                 function(err){
                     if(err){
@@ -80,6 +95,9 @@ module.exports = function(app, userModel) {
 
     function register(req, res){
         var user = req.body;
+        var hash = bcrypt.hashSync(user.password);
+        user.password = hash;
+        console.log(user);
 
         userModel
             .findUserByUsername(user.username)
@@ -153,6 +171,9 @@ module.exports = function(app, userModel) {
 
     function createUser(req, res){
         var user = req.body;
+        var hash = bcrypt.hashSync(user.password);
+        user.password = hash;
+
         userModel.createUser(user)
             .then(
                 function(doc){
@@ -210,14 +231,17 @@ module.exports = function(app, userModel) {
     }
 
     function updateUser(req, res){
+        console.log('hello');
         var userId = req.params.id;
-        var userParams = req.body;
-        var user;
-        userModel.updateUserById(userId, userParams)
+        var user = req.body;
+        var hash = bcrypt.hashSync(user.password);
+        user.password = hash;
+
+        console.log(user.password);
+        userModel.updateUserById(userId, user)
             .then(
                 function(doc){
-                    user = doc;
-                    res.json(user);
+                    res.json(doc);
                 },
                 function(err){
                     res.status(400).send(err);
@@ -272,6 +296,9 @@ module.exports = function(app, userModel) {
     function adminCreateUser(req, res){
         if(isAdmin(req.user)){
             var user = req.body;
+            var hash = bcrypt.hashSync(user.password);
+            user.password = hash;
+
             userModel.createUser(user)
                 .then(
                     function(doc){
@@ -288,6 +315,9 @@ module.exports = function(app, userModel) {
         if(isAdmin(req.user)){
             var userId = req.body;
             var user = req.body;
+            var hash = bcrypt.hashSync(user.password);
+            user.password = hash;
+
             userModel.adminUpdateUserById(userId, user)
                 .then(
                     function(doc){

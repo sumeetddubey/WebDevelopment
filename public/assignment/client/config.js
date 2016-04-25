@@ -79,6 +79,7 @@
             .then(
                 function(response){
                     if(response.data == '0'){
+                        console.log('invalid');
                         deferred.reject();
                         $location.url('/home');
                     }
