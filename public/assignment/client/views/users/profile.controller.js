@@ -6,7 +6,7 @@
         .module("FormBuilderApp")
         .controller("ProfileController", ProfileController);
 
-    function ProfileController($scope, $rootScope, UserService, $location, $route){
+    function ProfileController($scope, $rootScope, UserService, $location, $window){
         $scope.update = update;
 
         function init(){
@@ -28,12 +28,14 @@
 
         function update(user){
             currUser = $rootScope.currentUser;
+            if(!$scope.user.password){
+                $window.alert("Type password");
+            }
             UserService.updateUserById(currUser._id, user)
                 .then(
                     function(response){
                         if(response.data){
                             UserService.setCurrentUser(response.data);
-                            console.log(response.data);
                         }
                     },
                     function(err){

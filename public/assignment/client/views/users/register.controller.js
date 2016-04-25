@@ -33,7 +33,6 @@
             UserService.register($scope.user)
                 .then(
                     function(response){
-                        console.log(response.data);
                         if(response.data){
                             UserService.login(user)
                                 .then(function(response){

@@ -74,8 +74,6 @@ module.exports = function(){
 
     function findUserByUsername(username){
         var deferred = q.defer();
-        console.log('finding by username');
-        console.log(username);
         UserModel.findOne({username: username}, function(err, doc){
             if(err){
                 deferred.reject(err);

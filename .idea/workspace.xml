@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="424e18aa-904f-46a3-b711-682f3306b5da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/client/config.js" afterPath="$PROJECT_DIR$/public/assignment/client/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/client/index.html" afterPath="$PROJECT_DIR$/public/assignment/client/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/client/views/admin/admin.controller.js" afterPath="$PROJECT_DIR$/public/assignment/client/views/admin/admin.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/client/views/users/login.controller.js" afterPath="$PROJECT_DIR$/public/assignment/client/views/users/login.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/client/views/users/profile.controller.js" afterPath="$PROJECT_DIR$/public/assignment/client/views/users/profile.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/client/views/users/register.controller.js" afterPath="$PROJECT_DIR$/public/assignment/client/views/users/register.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/server/models/user.model.server.js" afterPath="$PROJECT_DIR$/public/assignment/server/models/user.model.server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/server/services/fields.service.server.js" afterPath="$PROJECT_DIR$/public/assignment/server/services/fields.service.server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/server/services/form.service.server.js" afterPath="$PROJECT_DIR$/public/assignment/server/services/form.service.server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assignment/server/services/user.service.server.js" afterPath="$PROJECT_DIR$/public/assignment/server/services/user.service.server.js" />
     </list>
     <list id="06abd0ce-0886-4719-a12a-8c7e777881a1" name="Failed commit: Default" comment="changed sortable function" />
     <list id="b185ab70-3ad7-408e-b4f2-226000a32183" name="Failed commit: Default (2)" comment="dependencies">
@@ -57,41 +51,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="admin.view.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assignment/client/views/admin/admin.view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.875">
-              <caret line="19" column="97" selection-start-line="19" selection-start-column="97" selection-end-line="19" selection-end-column="97" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assignment/client/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.0">
-              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assignment/client/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="80" column="45" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.model.server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user.model.server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assignment/server/models/user.model.server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.67410713">
-              <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+            <state vertical-scroll-proportion="-5.185185">
+              <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -100,8 +64,18 @@
       <file leaf-file-name="user.service.server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assignment/server/services/user.service.server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="109" column="58" selection-start-line="109" selection-start-column="58" selection-end-line="109" selection-end-column="58" />
+            <state vertical-scroll-proportion="-5.185185">
+              <caret line="38" column="45" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/assignment/client/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.41509435">
+              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -111,17 +85,17 @@
         <entry file="file://$PROJECT_DIR$/public/assignment/client/views/users/register.controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+              <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.view.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assignment/client/views/users/register.view.html">
+      <file leaf-file-name="login.view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assignment/client/views/users/login.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.583333">
-              <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -137,6 +111,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="admin.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assignment/client/views/admin/admin.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="user.service.client.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assignment/client/services/user.service.client.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -147,11 +131,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assignment/server/app.js">
+      <file leaf-file-name="profile.view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assignment/client/views/users/profile.view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.291667">
+              <caret line="18" column="84" selection-start-line="18" selection-start-column="84" selection-end-line="18" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assignment/client/views/users/profile.controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="81" selection-start-line="8" selection-start-column="81" selection-end-line="8" selection-end-column="81" />
+              <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -213,7 +207,6 @@
         <option value="$PROJECT_DIR$/public/assignment/server/models/user.schema.server.js" />
         <option value="$PROJECT_DIR$/public/assignment/client/services/user.service.client.js" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/public/assignment/client/views/users/profile.controller.js" />
         <option value="$PROJECT_DIR$/public/assignment/client/views/users/profile.view.html" />
         <option value="$PROJECT_DIR$/public/assignment/client/views/admin/admin.view.html" />
         <option value="$PROJECT_DIR$/public/assignment/server/services/fields.service.server.js" />
@@ -221,9 +214,10 @@
         <option value="$PROJECT_DIR$/public/assignment/client/views/admin/admin.controller.js" />
         <option value="$PROJECT_DIR$/public/assignment/client/index.html" />
         <option value="$PROJECT_DIR$/public/assignment/client/config.js" />
-        <option value="$PROJECT_DIR$/public/assignment/client/views/users/register.controller.js" />
         <option value="$PROJECT_DIR$/public/assignment/server/services/user.service.server.js" />
         <option value="$PROJECT_DIR$/public/assignment/client/views/users/login.controller.js" />
+        <option value="$PROJECT_DIR$/public/assignment/client/views/users/profile.controller.js" />
+        <option value="$PROJECT_DIR$/public/assignment/client/views/users/register.controller.js" />
         <option value="$PROJECT_DIR$/public/assignment/server/models/user.model.server.js" />
       </list>
     </option>
@@ -692,12 +686,6 @@
       <option name="number" value="Default" />
       <updated>1452808221444</updated>
     </task>
-    <task id="LOCAL-00015" summary="all pages to angular except formfields">
-      <created>1457173570612</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1457173570615</updated>
-    </task>
     <task id="LOCAL-00016" summary="minor changes">
       <created>1457183121426</created>
       <option name="number" value="00016" />
@@ -986,7 +974,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461564285251</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="some refactoring">
+      <created>1461566190789</created>
+      <option name="number" value="00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1461566190790</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1034,7 +1028,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <confirmMoveToFailedCommit value="2" />
-    <MESSAGE value="pushing project to main repo" />
     <MESSAGE value="minor" />
     <MESSAGE value="committing major server changes" />
     <MESSAGE value="more server commits" />
@@ -1059,7 +1052,8 @@
     <MESSAGE value="minor home page fix" />
     <MESSAGE value="completed admin page" />
     <MESSAGE value="security implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="security implementation" />
+    <MESSAGE value="some refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="some refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1302,42 +1296,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/server/models/user.mock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.541667">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/client/views/users/login.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assignment/client/views/header/header.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/client/views/users/profile.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/client/views/users/profile.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25">
-          <caret line="18" column="84" selection-start-line="18" selection-start-column="84" selection-end-line="18" selection-end-column="84" />
           <folding />
         </state>
       </provider>
@@ -1382,26 +1344,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/client/views/admin/admin.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assignment/client/views/admin/admin.view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.875">
           <caret line="19" column="97" selection-start-line="19" selection-start-column="97" selection-end-line="19" selection-end-column="97" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/client/services/user.service.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="42" selection-start-line="96" selection-start-column="42" selection-end-line="96" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -1414,34 +1360,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/client/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.0">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assignment/client/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="80" column="45" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/client/views/users/login.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/client/views/users/register.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1454,18 +1376,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assignment/server/services/user.service.server.js">
+    <entry file="file://$PROJECT_DIR$/public/assignment/server/models/user.mock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.541667">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assignment/client/services/user.service.client.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="109" column="58" selection-start-line="109" selection-start-column="58" selection-end-line="109" selection-end-column="58" />
+          <caret line="96" column="42" selection-start-line="96" selection-start-column="42" selection-end-line="96" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assignment/client/views/users/profile.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.291667">
+          <caret line="18" column="84" selection-start-line="18" selection-start-column="84" selection-end-line="18" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assignment/client/views/users/profile.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assignment/client/views/users/register.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assignment/client/views/users/login.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assignment/client/views/users/login.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assignment/client/views/admin/admin.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assignment/server/models/user.model.server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67410713">
-          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        <state vertical-scroll-proportion="-5.185185">
+          <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assignment/server/services/user.service.server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.185185">
+          <caret line="38" column="45" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assignment/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.41509435">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
           <folding />
         </state>
       </provider>
